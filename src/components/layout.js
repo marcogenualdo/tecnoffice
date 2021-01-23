@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import { Container, Row, Col } from "react-bootstrap"
-import Navbar from "./header"
+import { Container, Row, Col } from "react-bootstrap";
+import Navbar from "./header";
 
 const Layout = ({ children, pageInfo }) => (
   <>
@@ -37,6 +37,6 @@ const Layout = ({ children, pageInfo }) => (
       </Row>
     </Container>
   </>
-)
+);
 
-export default Layout
+export default Layout;

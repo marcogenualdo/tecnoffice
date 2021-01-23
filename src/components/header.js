@@ -1,18 +1,13 @@
-import React, { Img } from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import { Navbar, Nav, Button } from "react-bootstrap"
-import logo from "../images/logo.png"
-import "../styles/header.scss"
+import { Navbar, Nav, Button } from "react-bootstrap";
+import logo from "../images/logo.png";
+import "../styles/header.scss";
 
-const CustomNavbar = ({ pageInfo }) => {
+const SiteNavbar = ({ pageInfo }) => {
   return (
-    <Navbar
-      variant="light"
-      expand="lg"
-      id="site-navbar"
-      className="custom-navbar"
-    >
+    <Navbar variant="light" expand="lg" id="site-navbar">
       <Link to="/" className="link-no-style">
         <Navbar.Brand as="span">
           <img className="logo" src={logo} alt={pageInfo} />
@@ -46,7 +41,7 @@ const CustomNavbar = ({ pageInfo }) => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
+  );
+};
 
-export default CustomNavbar
+export default SiteNavbar;

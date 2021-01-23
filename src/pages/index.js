@@ -1,8 +1,8 @@
-import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import React from "react";
+import { Row, Col, Container, ListGroup } from "react-bootstrap";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
@@ -65,6 +65,6 @@ const IndexPage = () => (
       </Row>
     </Container>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
