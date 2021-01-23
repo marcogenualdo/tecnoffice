@@ -1,9 +1,18 @@
 {
-  "name": "gatsby-starter-react-bootstrap",
+  "name": "tecnoffice-website",
   "private": true,
   "description": "A starter that includes and configures react-bootstrap and react-icons, along with SASS handling. ",
   "version": "0.1.0",
-  "author": "Billy Jacoby <billyjacoby@gmail.com>",
+  "author": "Marco Genualdo <marcogenualdo@live.it>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.3.34",
@@ -31,15 +40,6 @@
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"

@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import { Navbar, Nav, Button } from "react-bootstrap"
 import logo from "../images/logo.png"
+import "../styles/header.scss"
 
 const CustomNavbar = ({ pageInfo }) => {
   return (
@@ -41,7 +42,7 @@ const CustomNavbar = ({ pageInfo }) => {
               Chi Siamo
             </Nav.Link>
           </Link>
-          <Button variant="primary">Contattaci</Button>
+          <Button>Contattaci</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
