@@ -1,41 +1,51 @@
+import React, { Img } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#20232a`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+import { Navbar, Nav, Button } from "react-bootstrap"
+import logo from "../images/logo.png"
+
+const CustomNavbar = ({ pageInfo }) => {
+  return (
+    <Navbar
+      variant="light"
+      expand="lg"
+      id="site-navbar"
+      className="custom-navbar"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+      <Link to="/" className="link-no-style">
+        <Navbar.Brand as="span">
+          <img className="logo" src={logo} alt={pageInfo} />
+        </Navbar.Brand>
+      </Link>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Link to="/page-2" className="link-no-style">
+            <Nav.Link as="span" eventKey="page-2">
+              Promo
+            </Nav.Link>
+          </Link>
+          <Link to="/page-2" className="link-no-style">
+            <Nav.Link as="span" eventKey="page-2">
+              Assistenza
+            </Nav.Link>
+          </Link>
+          <Link to="/page-2" className="link-no-style">
+            <Nav.Link as="span" eventKey="page-2">
+              Link Utili
+            </Nav.Link>
+          </Link>
+          <Link to="/page-2" className="link-no-style">
+            <Nav.Link as="span" eventKey="page-2">
+              Chi Siamo
+            </Nav.Link>
+          </Link>
+          <Button variant="primary">Contattaci</Button>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default CustomNavbar
