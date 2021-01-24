@@ -16,8 +16,8 @@ const NavLink = ({ children, to }) => (
 
 const SiteNavbar = ({ pageInfo }) => {
   return (
-    <Navbar variant="light" expand="lg" id="site-navbar">
-      <Link to="/" className="link-no-style mt-0">
+    <Navbar variant="light" expand="md" id="site-navbar">
+      <Link to="/" className="link-no-style">
         <Navbar.Brand as="span">
           <img className="logo" src={logo} alt={pageInfo} />
         </Navbar.Brand>
@@ -29,11 +29,19 @@ const SiteNavbar = ({ pageInfo }) => {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto mt-4">
-          <NavLink to="/page-2">Promo</NavLink>
-          <NavLink to="/page-2">Assistenza</NavLink>
-          <NavLink to="/page-2">Link Utili</NavLink>
-          <NavLink to="/page-2">Chi Siamo</NavLink>
-          <Button className="mx-4 btn-lg">Contattaci</Button>
+          <NavLink to="/promo">Promo</NavLink>
+          <NavLink to="/promo">Assistenza</NavLink>
+          <NavLink to="/promo">Link Utili</NavLink>
+          <NavLink to="/promo">Chi Siamo</NavLink>
+
+          <Nav.Item className="nav-link">
+            <Link
+              to="/contattaci"
+              className="badge badge-primary px-2 py-2 mx-4 mt-1"
+            >
+              Contattaci
+            </Link>
+          </Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
