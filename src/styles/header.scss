@@ -5,8 +5,27 @@
   top: 0;
   z-index: 100;
   padding: 1rem 10%;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .logo {
   width: 18rem;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 60%;
+  }
+
+  .nav-hamburger {
+    position: absolute;
+    top: 1.8rem;
+    right: 10%;
+  }
+
+  .nav-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

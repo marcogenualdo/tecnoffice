@@ -6,37 +6,15 @@
  */
 
 import React from "react";
-import { graphql } from "gatsby";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Navbar from "./header";
 
 const Layout = ({ children, pageInfo }) => (
-  <>
-    <Container fluid className="px-0 main">
-      <Navbar pageInfo={pageInfo} />
-      <Row noGutters>
-        <Col>
-          <Container className="mt-5">
-            <main>{children}</main>
-          </Container>
-        </Col>
-      </Row>
-    </Container>
-    <Container fluid className="px-0">
-      <Row noGutters>
-        <Col className="footer-col">
-          <footer>
-            <span>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </span>
-          </footer>
-        </Col>
-      </Row>
-    </Container>
-  </>
+  <Container fluid className="px-0 main">
+    <Navbar pageInfo={pageInfo} />
+    <main>{children}</main>
+  </Container>
 );
 
 export default Layout;
