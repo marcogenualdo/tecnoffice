@@ -37,7 +37,7 @@ const IndexPage = () => {
         <Img fluid={data.linesBg.childImageSharp.fluid} />
       </Container>
 
-      <Container className="home-intro px-3">
+      <Container className="home-intro px-5">
         <h1>Lorem Ipsum</h1>
         <p>
           This starter also includes a navbar that sticks to the top of the

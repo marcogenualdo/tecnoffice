@@ -16,19 +16,27 @@ const NavLink = ({ children, to }) => (
 );
 
 const SiteNavbar = ({ pageInfo }) => {
-  const assistenzaItems = forms.map(({ title }) => (
-    <NavDropdown.Item
-      onClick={() => {
-        navigate("/assistenza", { state: { activeForm: title } });
-      }}
-      eventKey={title}
-    >
-      {title}
-    </NavDropdown.Item>
-  ));
+  let firstItem = true;
+  const assistenzaItems = forms.map(({ title }) => {
+    const out = (
+      <>
+        {firstItem ? <></> : <NavDropdown.Divider />}
+        <NavDropdown.Item
+          onClick={() => {
+            navigate("/assistenza", { state: { activeForm: title } });
+          }}
+          eventKey={title}
+        >
+          {title}
+        </NavDropdown.Item>
+      </>
+    );
+    firstItem = false;
+    return out;
+  });
 
   return (
-    <Navbar variant="light" expand="md" id="site-navbar">
+    <Navbar variant="light" expand="md" id="site-navbar" className="px-sm-5">
       <Link to="/" className="link-no-style">
         <Navbar.Brand as="span">
           <img className="logo" src={logo} alt={pageInfo} />
@@ -43,21 +51,11 @@ const SiteNavbar = ({ pageInfo }) => {
         <Nav className="ml-auto mt-4">
           <NavLink to="/promo">Promo</NavLink>
 
-          <NavDropdown
-            className="nav-link"
-            // onClick={assistenzaRoute}
-            title="Assistenza"
-            id="nav-dropdown"
-          >
+          <NavDropdown className="nav-link" title="Assistenza">
             {assistenzaItems}
           </NavDropdown>
 
-          <NavDropdown
-            className="nav-link"
-            // onClick={assistenzaRoute}
-            title="Link Utili"
-            id="nav-dropdown"
-          >
+          <NavDropdown className="nav-link" title="Link Utili">
             <NavDropdown.Item href="https://www.google.com" eventyKey={0}>
               Google
             </NavDropdown.Item>
