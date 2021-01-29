@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 import "../../styles/forms.scss";
 
-const AccordionItem = ({ startsActive, title, children }) => {
-  const [isActive, setIsActive] = useState(startsActive);
+const AccordionItem = ({ activeForm, setActiveForm, title, children }) => {
+  // const [isActive, setIsActive] = useState(startsActive);
 
   return (
     <div className="accordion-item">
-      <div onClick={() => setIsActive(!isActive)} className="accordion-trigger">
+      <div onClick={() => setActiveForm(title)} className="accordion-trigger">
         <h4>{title}</h4>
-        <div className={`accordion-icon ${isActive ? "is-active" : ""}`}></div>
+        <div
+          className={`accordion-icon ${
+            activeForm === title ? "is-active" : ""
+          }`}
+        ></div>
       </div>
-      <div className={`accordion-content ${isActive ? "is-active" : ""}`}>
+      <div
+        className={`accordion-content ${
+          activeForm === title ? "is-active" : ""
+        }`}
+      >
         {children}
       </div>
     </div>
@@ -18,8 +26,13 @@ const AccordionItem = ({ startsActive, title, children }) => {
 };
 
 const Accordion = ({ forms, activeItem }) => {
+  const [activeForm, setActiveForm] = useState(activeItem);
   const items = forms.map(item => (
-    <AccordionItem startsActive={item.title === activeItem} title={item.title}>
+    <AccordionItem
+      activeForm={activeForm}
+      setActiveForm={setActiveForm}
+      title={item.title}
+    >
       {item.form}
     </AccordionItem>
   ));

@@ -1,0 +1,20 @@
+main {
+  padding: 0;
+}
+.main-container {
+  background-color: #aaa4;
+}
+
+@media screen and (min-width: 800px) {
+  .main-container {
+    padding: 6rem 12rem;
+    font-size: 1.2rem;
+  }
+  .main-text {
+    padding-right: 6rem;
+    border-right: solid;
+  }
+  .contatti {
+    padding-left: 3rem;
+  }
+}

@@ -88,7 +88,7 @@ const SiteNavbar = ({ pageInfo }) => {
               Prodotti Ricoh
             </NavDropdown.Item>
           </NavDropdown>
-          <NavLink to="/promo">Chi Siamo</NavLink>
+          <NavLink to="/chi-siamo">Chi Siamo</NavLink>
 
           <Nav.Item className="nav-link">
             <Link to="/contattaci" className="badge badge-primary">
