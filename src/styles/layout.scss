@@ -1,28 +1,18 @@
 @import "variables";
 
-.layout-container {
-  padding: 0rem 10rem;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .layout-container {
     padding: 0rem 0rem;
   }
 }
 
-div.main {
+main {
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding: 10rem 12rem;
 }
 
 div.full-height {
   min-height: 100vh;
-}
-
-a.link-no-style {
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .footer-col {
@@ -46,5 +36,11 @@ a.link-no-style {
       align-self: center;
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 10rem 0rem;
   }
 }

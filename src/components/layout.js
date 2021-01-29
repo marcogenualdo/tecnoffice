@@ -7,15 +7,14 @@
 
 import React from "react";
 
-import { Container } from "react-bootstrap";
 import Navbar from "./header";
 import "../styles/layout.scss";
 
 const Layout = ({ children, pageInfo }) => (
-  <Container fluid className="layout-container">
+  <div>
     <Navbar pageInfo={pageInfo} />
-    <main className="py-5">{children}</main>
-  </Container>
+    <main>{children}</main>
+  </div>
 );
 
 export default Layout;

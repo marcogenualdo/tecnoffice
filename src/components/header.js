@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, navigate } from "gatsby";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -8,7 +8,7 @@ import { forms } from "../pages/assistenza";
 import "../styles/header.scss";
 
 const NavLink = ({ children, to }) => (
-  <Link to={to} className="link-no-style px-4 nav-link">
+  <Link to={to} className="nav-link">
     <Nav.Link as="span" eventKey={to}>
       {children}
     </Nav.Link>
@@ -16,6 +16,23 @@ const NavLink = ({ children, to }) => (
 );
 
 const SiteNavbar = ({ pageInfo }) => {
+  // background transparency on scroll
+  const navAlpha = yScroll => Math.max(0, Math.min(1, yScroll / 300));
+  const [alpha, setAlpha] = useState(0);
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const yScroll = document.scrollingElement.scrollTop;
+      setAlpha(navAlpha(yScroll));
+    });
+  }, []);
+
+  // background color on mobile menu toggle
+  const [expandedMenu, setExpandedMenu] = useState(false);
+  const toggleBg = () => {
+    setExpandedMenu(!expandedMenu);
+  };
+
+  // assistenza sub-menu
   let firstItem = true;
   const assistenzaItems = forms.map(({ title }) => {
     const out = (
@@ -36,8 +53,18 @@ const SiteNavbar = ({ pageInfo }) => {
   });
 
   return (
-    <Navbar variant="light" expand="md" id="site-navbar" className="px-sm-5">
-      <Link to="/" className="link-no-style">
+    <Navbar
+      variant="light"
+      expand="xl"
+      fixed="top"
+      id="site-navbar"
+      style={{
+        backgroundColor: expandedMenu
+          ? "#434343"
+          : `rgba(255,255,255,${alpha})`,
+      }}
+    >
+      <Link to="/">
         <Navbar.Brand as="span">
           <img className="logo" src={logo} alt={pageInfo} />
         </Navbar.Brand>
@@ -46,9 +73,10 @@ const SiteNavbar = ({ pageInfo }) => {
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
         className="nav-hamburger"
+        onClick={toggleBg}
       />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto mt-4">
+        <Nav className="ml-auto">
           <NavLink to="/promo">Promo</NavLink>
 
           <NavDropdown className="nav-link" title="Assistenza">
@@ -56,18 +84,14 @@ const SiteNavbar = ({ pageInfo }) => {
           </NavDropdown>
 
           <NavDropdown className="nav-link" title="Link Utili">
-            <NavDropdown.Item href="https://www.google.com" eventyKey={0}>
-              Google
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="https://www.youtube.com" eventyKey={1}>
-              YouTube
+            <NavDropdown.Item href="https://www.ricoh.it/prodotti" eventKey={0}>
+              Prodotti Ricoh
             </NavDropdown.Item>
           </NavDropdown>
           <NavLink to="/promo">Chi Siamo</NavLink>
 
           <Nav.Item className="nav-link">
-            <Link to="/contattaci" className="badge badge-primary px-2 py-2 ">
+            <Link to="/contattaci" className="badge badge-primary">
               Contattaci
             </Link>
           </Nav.Item>

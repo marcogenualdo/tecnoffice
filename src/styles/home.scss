@@ -16,14 +16,8 @@
   z-index: 0;
 }
 
-@media screen and (max-width: 800px) {
-  .office-bg {
-    display: none;
-  }
-}
-
 .home-intro {
-  position: absolute;
+  position: relative;
   font-family: "Source Sans Pro";
   z-index: 1;
 
@@ -37,5 +31,28 @@
     width: 25rem;
     font-size: 1.4rem;
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .office-bg {
+    display: none;
+  }
+
+  .lines-bg {
+    height: 60%;
+    overflow: hidden;
+  }
+
+  .home-intro {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    p {
+      width: 90%;
+      margin: auto;
+    }
   }
 }
