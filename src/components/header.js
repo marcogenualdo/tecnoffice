@@ -33,31 +33,23 @@ const SiteNavbar = ({ pageInfo }) => {
   };
 
   // assistenza sub-menu
-  let firstItem = true;
-  const assistenzaItems = forms.map(({ title }) => {
-    const out = (
-      <>
-        {firstItem ? <></> : <NavDropdown.Divider />}
-        <NavDropdown.Item
-          onClick={() => {
-            navigate("/assistenza", { state: { activeForm: title } });
-          }}
-          eventKey={title}
-        >
-          {title}
-        </NavDropdown.Item>
-      </>
-    );
-    firstItem = false;
-    return out;
-  });
+  const assistenzaItems = forms.map(({ title }) => (
+    <NavDropdown.Item
+      onClick={() => {
+        navigate("/assistenza", { state: { activeForm: title } });
+      }}
+      eventKey={title}
+    >
+      {title}
+    </NavDropdown.Item>
+  ));
 
   return (
     <Navbar
       variant="light"
       expand="xl"
-      fixed="top"
       id="site-navbar"
+      fixed="top"
       style={{
         backgroundColor: expandedMenu
           ? "#434343"
@@ -74,6 +66,7 @@ const SiteNavbar = ({ pageInfo }) => {
         aria-controls="basic-navbar-nav"
         className="nav-hamburger"
         onClick={toggleBg}
+        style={{ backgroundColor: expandedMenu ? "#fff" : "#0000" }}
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
