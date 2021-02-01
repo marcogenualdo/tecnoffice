@@ -1,7 +1,7 @@
 {
   "name": "tecnoffice-website",
   "private": true,
-  "description": "A starter that includes and configures react-bootstrap and react-icons, along with SASS handling. ",
+  "description": "Tecnoffice website: printing and office appliances lease.",
   "version": "0.1.0",
   "author": "Marco Genualdo <marcogenualdo@live.it>",
   "scripts": {
@@ -40,15 +40,13 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/marcogenualdo/tecnoffice"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "homepage": "https://billyjacoby.github.io/gatsby-react-bootstrap-starter/",
   "prettier": {
     "printWidth": 80,
     "semi": true,

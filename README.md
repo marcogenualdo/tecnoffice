@@ -1,9 +1,1 @@
-# Gatsby React Bootstrap Starter
-
-A GatsbyJS starter that includes
-
-- react-bootstrap
-- react-icons
-- sticky on scroll navbar
-- SASS compiler
-- basic layout
+# Website for Tecnoffice: printing and office appliances lease
