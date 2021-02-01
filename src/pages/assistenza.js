@@ -23,12 +23,17 @@ export const forms = [
   },
 ];
 
-const assistenza = ({ location }) => (
-  <Layout pageInfo={{ pageName: "contattaci" }}>
-    <Container className="px-md-5">
-      <Accordion forms={forms} activeItem={location.state.activeForm} />
-    </Container>
-  </Layout>
-);
+const Assistenza = ({ location }) => {
+  if (location?.state?.activeForm == undefined)
+    location = { state: { activeForm: null } };
 
-export default assistenza;
+  return (
+    <Layout pageInfo={{ pageName: "contattaci" }}>
+      <Container className="px-md-5">
+        <Accordion forms={forms} activeItem={location.state.activeForm} />
+      </Container>
+    </Layout>
+  );
+};
+
+export default Assistenza;

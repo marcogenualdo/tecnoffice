@@ -1,46 +1,83 @@
 @import "variables";
 
-@media screen and (max-width: 720px) {
-  .layout-container {
-    padding: 0rem 0rem;
-  }
-}
-
 main {
   min-height: 100vh;
-  padding: 10rem 0;
+  padding: 12rem;
 }
 
 div.full-height {
   min-height: 100vh;
 }
 
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  footer {
-    display: flex;
-    position: relative;
-    bottom: 0;
-    margin-top: -60px;
-    height: 60px;
-    clear: both;
-    background-color: $primary;
-    color: white;
-    justify-content: center;
-    width: 100%;
+footer {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 1px;
 
-    span {
-      align-self: center;
-      text-align: center;
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #ddd;
     }
+
+    &:after {
+      color: #fff;
+    }
+  }
+
+  i {
+    color: #aaa;
+  }
+
+  span {
+    float: right;
+  }
+
+  ul {
+    margin: auto;
+    position: relative;
+    bottom: 60px;
   }
 }
 
-@media screen and (max-width: 800px) {
+.footer-bg {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  background-color: #0000;
+  padding: 0 15%;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+//tablet
+@media screen and (max-width: $tablet-width) {
   main {
-    padding: 10rem 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+// phone
+@media screen and (max-width: $phone-width) {
+  main {
+    padding: 10rem 1rem 2rem 1rem;
+  }
+
+  footer {
+    margin-top: 50%;
   }
 }

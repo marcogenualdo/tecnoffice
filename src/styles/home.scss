@@ -5,6 +5,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 0;
   opacity: 0.35;
 }
@@ -13,35 +14,102 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 0;
 }
 
-main {
-  padding: 12rem;
+.main-image-box {
+  height: calc(0.4 * 100vw);
 }
 
 .home-intro {
   position: relative;
   font-family: "Source Sans Pro";
   z-index: 1;
+  width: 50%;
 
   h1 {
     color: $primary;
-    font-size: 6rem;
+    font-size: 6vw;
     font-weight: 900;
   }
 
   p {
-    width: 25rem;
-    font-size: 1.4rem;
+    width: 70%;
+    font-size: 1.4vw;
     font-weight: 600;
   }
 }
 
-@media screen and (max-width: 800px) {
+.home-entry {
+  padding: 5rem 0 5rem 0;
+
+  .entry-text {
+    padding: 2rem 5rem;
+  }
+
+  .entry-img {
+    background-color: #fff;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .image-wrap {
+      padding: 1rem;
+      margin: auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: $tablet-width) {
   main {
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: calc(0.5 * 100vw);
+  }
+
+  .lines-bg {
+    height: 90%;
+    overflow: hidden;
+  }
+
+  .main-image-box {
+    height: 100%;
+  }
+
+  .home-intro {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1rem;
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  .home-entry {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .entry-text {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+// phone
+@media screen and (max-width: $phone-width) {
+  body {
+    background-color: $secondary;
+    color: #fff;
   }
 
   .office-bg {
@@ -49,19 +117,15 @@ main {
   }
 
   .lines-bg {
-    height: 60%;
-    overflow: hidden;
-  }
+    opacity: 0.1;
 
-  .home-intro {
-    text-align: center;
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
+    .gatsby-image-wrapper {
+      height: 100%;
+      width: unset;
     }
-    p {
-      width: 90%;
-      margin: auto;
+
+    img {
+      height: 100%;
     }
   }
 }

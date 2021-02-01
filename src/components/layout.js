@@ -8,12 +8,14 @@
 import React from "react";
 
 import Navbar from "./header";
+import Footer from "./footer";
 import "../styles/layout.scss";
 
 const Layout = ({ children, pageInfo }) => (
   <div>
     <Navbar pageInfo={pageInfo} />
     <main>{children}</main>
+    <Footer />
   </div>
 );
 

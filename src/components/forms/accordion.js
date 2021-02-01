@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../../styles/forms.scss";
 
 const AccordionItem = ({ activeForm, setActiveForm, title, children }) => {
-  // const [isActive, setIsActive] = useState(startsActive);
-
   return (
     <div className="accordion-item">
       <div onClick={() => setActiveForm(title)} className="accordion-trigger">

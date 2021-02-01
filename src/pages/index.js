@@ -7,6 +7,30 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "../styles/home.scss";
 
+const HomeEntry = ({ title, imgSrc }) => (
+  <Container fluid className="home-entry">
+    <Row>
+      <Col lg={6} className="entry-text">
+        <h1>{title}</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </Col>
+      <Col lg={6} className="entry-img">
+        <div className="image-wrap">
+          <img src={imgSrc} />
+        </div>
+      </Col>
+    </Row>
+  </Container>
+);
+
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -30,25 +54,32 @@ const IndexPage = () => {
   return (
     <Layout pageInfo={{ pageName: "index" }}>
       <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-      <Container fluid className="px-0 office-bg">
+      <div className="office-bg">
         <Img fluid={data.officeBg.childImageSharp.fluid} />
-      </Container>
-      <Container fluid className="px-0 lines-bg">
-        <Img fluid={data.linesBg.childImageSharp.fluid} />
-      </Container>
-
-      <div className="home-intro">
-        <h1>Lorem Ipsum</h1>
-        <p>
-          This starter also includes a navbar that sticks to the top of the
-          screen when the user scrolls past it, and a footer that stays at the
-          bottom of the screen.
-        </p>
-        <p>
-          For more documentation on these packages and how they work, please
-          refer to the pages linked in the list above.
-        </p>
       </div>
+      <div className="lines-bg">
+        <Img fluid={data.linesBg.childImageSharp.fluid} />
+      </div>
+
+      <div className="main-image-box">
+        <div className="home-intro">
+          <h1>Lorem Ipsum</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <HomeEntry
+        title="Entry 1"
+        imgSrc="https://www.thephoblographer.com/wp-content/uploads/2016/12/Chris-Gampat-The-Phoblographer-Epson-P800-printer-review-product-photos-9-770x513.jpg"
+      />
+      <HomeEntry
+        title="Entry 2"
+        imgSrc="http://cdn.arstechnica.net/wp-content/uploads/2011/02/ask-ars-color-printing.jpg"
+      />
     </Layout>
   );
 };

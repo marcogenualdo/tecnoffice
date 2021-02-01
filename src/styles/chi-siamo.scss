@@ -1,11 +1,10 @@
-main {
-  padding: 0;
-}
+@import "variables";
+
 .main-container {
   background-color: #aaa4;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $phone-width) {
   .main-container {
     padding: 6rem 12rem;
     font-size: 1.2rem;
