@@ -1,0 +1,16 @@
+.promo-entry {
+  width: 80%;
+  clear: both;
+  margin: 7rem 0;
+
+  .promo-entry-image {
+    padding: 1rem;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

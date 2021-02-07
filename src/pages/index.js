@@ -8,27 +8,29 @@ import SEO from "../components/seo";
 import "../styles/home.scss";
 
 const HomeEntry = ({ title, imgSrc }) => (
-  <Container fluid className="home-entry">
-    <Row>
-      <Col lg={6} className="entry-text">
-        <h1>{title}</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </Col>
-      <Col lg={6} className="entry-img">
-        <div className="image-wrap">
-          <img src={imgSrc} />
-        </div>
-      </Col>
-    </Row>
-  </Container>
+  <div className="home-entry-wrapper">
+    <Container fluid className="home-entry">
+      <Row>
+        <Col lg={6} className="entry-text">
+          <h1>{title}</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </Col>
+        <Col lg={6} className="entry-img">
+          <div className="image-wrap">
+            <img src={imgSrc} />
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  </div>
 );
 
 const IndexPage = () => {
@@ -86,14 +88,19 @@ const IndexPage = () => {
         </span>
       </div>
 
-      <HomeEntry
-        title="Entry 1"
-        imgSrc="https://www.thephoblographer.com/wp-content/uploads/2016/12/Chris-Gampat-The-Phoblographer-Epson-P800-printer-review-product-photos-9-770x513.jpg"
-      />
-      <HomeEntry
-        title="Entry 2"
-        imgSrc="http://cdn.arstechnica.net/wp-content/uploads/2011/02/ask-ars-color-printing.jpg"
-      />
+      <div className="entries-wrapper">
+        <div className="entries-header">
+          <h1>I nostri servizi</h1>
+        </div>
+        <HomeEntry
+          title="Entry 1"
+          imgSrc="https://www.thephoblographer.com/wp-content/uploads/2016/12/Chris-Gampat-The-Phoblographer-Epson-P800-printer-review-product-photos-9-770x513.jpg"
+        />
+        <HomeEntry
+          title="Entry 2"
+          imgSrc="http://cdn.arstechnica.net/wp-content/uploads/2011/02/ask-ars-color-printing.jpg"
+        />
+      </div>
     </Layout>
   );
 };

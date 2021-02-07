@@ -19,6 +19,10 @@
   background-image: linear-gradient(to bottom, #fff, #fff0);
 }
 
+main {
+  padding: 12rem 6rem;
+}
+
 @media screen and (min-width: $phone-width) {
   .main-text {
     position: relative;

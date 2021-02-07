@@ -18,9 +18,13 @@
   z-index: 0;
 }
 
-.ricoh-logo {
-  display: block;
-  width: 10rem;
+.ricoh-hero {
+  padding: 0 6rem;
+
+  .ricoh-logo {
+    display: block;
+    width: 10rem;
+  }
 }
 
 .main-image-box {
@@ -32,6 +36,7 @@
   font-family: "Source Sans Pro";
   z-index: 1;
   width: 50%;
+  padding: 0 6rem;
 
   h1 {
     color: $primary;
@@ -46,8 +51,17 @@
   }
 }
 
+.entries-wrapper {
+  margin: 5rem 0;
+}
+
+.entries-header {
+  text-align: center;
+}
+
 .home-entry {
-  padding: 5rem 0 5rem 0;
+  margin: 3rem 0;
+  padding: 3rem 6rem;
 
   .entry-text {
     padding: 2rem 5rem;
@@ -56,7 +70,7 @@
   .entry-img {
     background-color: #fff;
     max-width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 1rem;
 
     .image-wrap {
       padding: 1rem;
@@ -100,7 +114,7 @@
   }
 
   .ricoh-hero {
-    padding: 8rem 0;
+    padding: 8rem 6rem;
   }
 
   .home-entry {
