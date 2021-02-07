@@ -48,6 +48,13 @@ const IndexPage = () => {
           }
         }
       }
+      logoRicoh: file(relativePath: { eq: "logo-ricoh.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -72,6 +79,13 @@ const IndexPage = () => {
           </p>
         </div>
       </div>
+      <div className="ricoh-hero">
+        <h2>Rivenditore autorizzato</h2>
+        <span className="ricoh-logo">
+          <Img fluid={data.logoRicoh.childImageSharp.fluid} />
+        </span>
+      </div>
+
       <HomeEntry
         title="Entry 1"
         imgSrc="https://www.thephoblographer.com/wp-content/uploads/2016/12/Chris-Gampat-The-Phoblographer-Epson-P800-printer-review-product-photos-9-770x513.jpg"

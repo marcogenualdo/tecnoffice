@@ -77,7 +77,11 @@ const SiteNavbar = ({ pageInfo }) => {
           </NavDropdown>
 
           <NavDropdown className="nav-link" title="Link Utili">
-            <NavDropdown.Item href="https://www.ricoh.it/prodotti" eventKey={0}>
+            <NavDropdown.Item
+              href="https://www.ricoh.it/prodotti"
+              target="blank"
+              eventKey={0}
+            >
               Prodotti Ricoh
             </NavDropdown.Item>
           </NavDropdown>

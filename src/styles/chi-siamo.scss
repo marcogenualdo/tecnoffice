@@ -1,19 +1,42 @@
 @import "variables";
 
-.main-container {
-  background-color: #aaa4;
+.inner-box {
+  margin: 1rem;
+  background-color: #eee;
+  padding: 1rem;
+}
+
+.bg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#site-navbar {
+  background-image: linear-gradient(to bottom, #fff, #fff0);
 }
 
 @media screen and (min-width: $phone-width) {
-  .main-container {
-    padding: 6rem 12rem;
-    font-size: 1.2rem;
-  }
   .main-text {
-    padding-right: 6rem;
-    border-right: solid;
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    float: left;
+    clear: both;
+    box-shadow: 0 0 2rem;
+    background-color: $primary;
   }
+
   .contatti {
-    padding-left: 3rem;
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    float: right;
+    clear: both;
+    background-color: $primary;
+    box-shadow: 0 0 2rem;
   }
 }

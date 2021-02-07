@@ -18,8 +18,13 @@
   z-index: 0;
 }
 
+.ricoh-logo {
+  display: block;
+  width: 10rem;
+}
+
 .main-image-box {
-  height: calc(0.4 * 100vw);
+  height: calc(0.34 * 100vw);
 }
 
 .home-intro {
@@ -92,6 +97,10 @@
       width: 90%;
       margin: auto;
     }
+  }
+
+  .ricoh-hero {
+    padding: 8rem 0;
   }
 
   .home-entry {

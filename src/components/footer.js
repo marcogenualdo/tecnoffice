@@ -33,21 +33,21 @@ const Footer = () => {
     <footer>
       <Container fluid className="footer-content">
         <Row>
-          <Col sm={6}>
-            <ul>
-              <li>
-                <i>e-mail:</i> <span>{businessData.email}</span>
-              </li>
-              <li>
-                <i>Telefono:</i> <span>{businessData.phone}</span>
-              </li>
-              <li>
-                <i>Indirizzo:</i>
-                <span>
-                  <a href={businessData.addressLink}>{businessData.address}</a>
-                </span>
-              </li>
-            </ul>
+          <Col lg={6} md={8}>
+            <div className="footer-entry">
+              <i>e-mail:</i> <span>{businessData.email}</span>
+            </div>
+            <div className="footer-entry">
+              <i>Telefono:</i> <span>{businessData.phone}</span>
+            </div>
+            <div className="footer-entry">
+              <i>Indirizzo:</i>
+              <span>
+                <a href={businessData.addressLink} target="blank">
+                  {businessData.address}
+                </a>
+              </span>
+            </div>
           </Col>
           <Col sm={6}></Col>
         </Row>
