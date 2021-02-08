@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: src/images/uploads
+# public_folder: /img
+
+locale: it
+
+collections:
+  - name: 'home'
+    label: 'Services'
+    folder: 'src/content/home/services'
+    create: true
+    # slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - { label: 'Titolo', name: 'title', widget: 'string' }
+      - { label: 'Immagine', name: 'image', widget: 'string' }
+      - { label: 'Descrizione', name: 'body', widget: 'markdown' }
+
+  - name: 'promo'
+    label: 'Promo'
+    folder: 'src/content/promo'
+    create: true
+    # slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - { label: 'Titolo', name: 'title', widget: 'string' }
+      - { label: 'Prezzo', name: 'price', widget: 'string' }
+      - { label: 'Immagine', name: 'image', widget: 'string' }
+      - { label: 'Descrizione', name: 'body', widget: 'markdown' }
+
+  - name: 'business-info'
+    label: 'Business Info'
+    path: 'src/content/business-info.md'
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: 'e-mail', name: 'email', widget: 'string' }
+      - { label: 'Telefono', name: 'phone', widget: 'string' }
+      - { label: 'Indirizzo', name: 'address', widget: 'string' }
+      - { label: 'Link a Indirizzo', name: 'addressLink', widget: 'string' }
