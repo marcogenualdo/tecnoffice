@@ -1,34 +1,16 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Layout from "../components/layout";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import React from "react";
+import Layout from "../components/layout";
 import "../styles/chi-siamo.scss";
 
-const ChiSiamo = () => {
+const ChiSiamo = ({ data }) => {
   const {
-    site: { siteMetadata: businessData },
+    businessData: {
+      childMarkdownRemark: { frontmatter: businessData },
+    },
     officeBg,
-  } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            phone
-            email
-            address
-            addressLink
-          }
-        }
-        officeBg: file(relativePath: { eq: "chi-siamo-bg.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 20000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `
-  );
+  } = data;
 
   return (
     <>
@@ -36,7 +18,7 @@ const ChiSiamo = () => {
         <Img fluid={officeBg.childImageSharp.fluid} />
       </div>
       <Layout pageInfo={{ pageName: "contattaci" }}>
-        <div className="contatti">
+        <div className="floating-box contatti">
           <div className="inner-box">
             <h1>Contatti</h1>
             <ul>
@@ -51,7 +33,7 @@ const ChiSiamo = () => {
           </div>
         </div>
 
-        <div className="main-text">
+        <div className="floating-box main-text">
           <div className="inner-box">
             <h1>Chi Siamo</h1>
             <p>
@@ -80,3 +62,25 @@ const ChiSiamo = () => {
 };
 
 export default ChiSiamo;
+
+export const query = graphql`
+  query {
+    businessData: file(relativePath: { eq: "business-info.md" }) {
+      childMarkdownRemark {
+        frontmatter {
+          email
+          phone
+          address
+          addressLink
+        }
+      }
+    }
+    officeBg: file(relativePath: { eq: "chi-siamo-bg.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 20000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

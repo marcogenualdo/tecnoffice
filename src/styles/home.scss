@@ -70,7 +70,7 @@
   .entry-img {
     background-color: #fff;
     max-width: 100%;
-    box-shadow: 0 0 1rem;
+    box-shadow: 0 0 1rem black;
 
     .image-wrap {
       padding: 1rem;
@@ -85,10 +85,6 @@
 
 // tablet
 @media screen and (max-width: $tablet-width) {
-  main {
-    padding-top: calc(0.5 * 100vw);
-  }
-
   .lines-bg {
     height: 90%;
     overflow: hidden;
@@ -96,11 +92,13 @@
 
   .main-image-box {
     height: 100%;
+    width: 100%;
   }
 
   .home-intro {
     width: 100%;
     text-align: center;
+    padding: 0 1rem;
 
     h1 {
       font-size: 3rem;
@@ -114,7 +112,7 @@
   }
 
   .ricoh-hero {
-    padding: 8rem 6rem;
+    padding: 8rem 1rem;
   }
 
   .home-entry {
@@ -150,5 +148,9 @@
     img {
       height: 100%;
     }
+  }
+
+  .home-entry-wrapper {
+    background-color: #0000 !important;
   }
 }

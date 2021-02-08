@@ -1,33 +1,35 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import { Row, Col, Container } from "react-bootstrap";
 
 const Footer = () => {
   const {
-    site: { siteMetadata: businessData },
+    businessData: {
+      childMarkdownRemark: { frontmatter: businessData },
+    },
     footerBg,
-  } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            phone
+  } = useStaticQuery(graphql`
+    query {
+      businessData: file(relativePath: { eq: "business-info.md" }) {
+        childMarkdownRemark {
+          frontmatter {
             email
+            phone
             address
             addressLink
           }
         }
-        footerBg: file(relativePath: { eq: "footer-unique.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid
-            }
+      }
+      footerBg: file(relativePath: { eq: "footer-unique.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   return (
     <footer>

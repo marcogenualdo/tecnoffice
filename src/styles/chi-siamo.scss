@@ -4,6 +4,7 @@
   margin: 1rem;
   background-color: #eee;
   padding: 1rem;
+  color: $secondary;
 }
 
 .bg {
@@ -15,32 +16,34 @@
   background-size: cover;
 }
 
-#site-navbar {
-  background-image: linear-gradient(to bottom, #fff, #fff0);
+.floating-box {
+  background-color: $primary;
+  position: relative;
+  box-shadow: 0 0 2rem black;
+  z-index: 1;
 }
 
-main {
-  padding: 12rem 6rem;
+ul.contatti {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 @media screen and (min-width: $phone-width) {
+  #site-navbar {
+    background-image: linear-gradient(to bottom, #fff, #fff0);
+  }
+
+  .floating-box {
+    clear: both;
+  }
+
   .main-text {
-    position: relative;
-    z-index: 1;
     width: 60%;
     float: left;
-    clear: both;
-    box-shadow: 0 0 2rem;
-    background-color: $primary;
   }
 
   .contatti {
-    position: relative;
-    z-index: 1;
     width: 30%;
     float: right;
-    clear: both;
-    background-color: $primary;
-    box-shadow: 0 0 2rem;
   }
 }

@@ -34,7 +34,7 @@ const Services = ({ entries }) => (
         title={entry.frontmatter.title}
         imgSrc={entry.frontmatter.image}
         content={entry.excerpt}
-        bgColor={index % 2 ? "#f4f4f4" : "#fff"}
+        bgColor={index % 2 ? "#f4f4f4" : "#fff0"}
       />
     ))}
   </div>
