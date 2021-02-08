@@ -33,14 +33,17 @@ collections:
       - { label: 'Immagine', name: 'image', widget: 'string' }
       - { label: 'Descrizione', name: 'body', widget: 'markdown' }
 
-  - name: 'business-info'
-    label: 'Business Info'
-    path: 'src/content/business-info.md'
+  - name: 'info'
+    label: 'Info'
     create: false
     editor:
       preview: false
-    fields:
-      - { label: 'e-mail', name: 'email', widget: 'string' }
-      - { label: 'Telefono', name: 'phone', widget: 'string' }
-      - { label: 'Indirizzo', name: 'address', widget: 'string' }
-      - { label: 'Link a Indirizzo', name: 'addressLink', widget: 'string' }
+    files:
+      - label: 'Business Info'
+        name: 'business-info'
+        file: 'src/content/business-info.md'
+        fields:
+          - { label: 'e-mail', name: 'email', widget: 'string' }
+          - { label: 'Telefono', name: 'phone', widget: 'string' }
+          - { label: 'Indirizzo', name: 'address', widget: 'string' }
+          - { label: 'Link a Indirizzo', name: 'addressLink', widget: 'string' }
