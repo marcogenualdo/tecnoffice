@@ -5,9 +5,9 @@ import Layout from "../components/layout";
 
 const Contattaci = () => (
   <Layout pageInfo={{ pageName: "contattaci" }}>
-    <Container className="px-md-5 contattaci-main">
+    <Container className="px-lg-5 contattaci-main">
       <Row>
-        <Col lg={6} className="px-md-5 py-3">
+        <Col lg={6} className="px-lg-5 py-3">
           <h1>Mandaci una mail</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

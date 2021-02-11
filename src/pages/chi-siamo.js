@@ -56,6 +56,7 @@ const ChiSiamo = ({ data }) => {
             </p>
           </div>
         </div>
+        <div style={{ clear: "both" }} />
       </Layout>
     </>
   );

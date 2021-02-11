@@ -1,12 +1,5 @@
 @import "variables";
 
-.inner-box {
-  margin: 1rem;
-  background-color: #eee;
-  padding: 1rem;
-  color: $secondary;
-}
-
 .bg {
   position: absolute;
   z-index: 0;
@@ -18,9 +11,16 @@
 
 .floating-box {
   background-color: $primary;
-  position: relative;
   box-shadow: 0 0 2rem black;
+  position: relative;
   z-index: 1;
+  padding: 0.9rem;
+}
+
+.inner-box {
+  padding: 1rem;
+  background-color: #eee;
+  color: $secondary;
 }
 
 ul.contatti {
@@ -45,5 +45,24 @@ ul.contatti {
   .contatti {
     width: 30%;
     float: right;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .floating-box {
+    margin: 2rem 0;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: $tablet-width) and (min-width: $phone-width) {
+  .contatti {
+    width: 60%;
+    float: right;
+  }
+
+  .main-text {
+    width: 70%;
+    float: left;
   }
 }

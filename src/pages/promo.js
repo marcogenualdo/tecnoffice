@@ -35,6 +35,7 @@ const SecondPage = ({ data }) => (
         float={index % 2 ? "left" : "right"}
       />
     ))}
+    <div style={{ clear: "both" }} />
   </Layout>
 );
 

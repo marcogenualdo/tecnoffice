@@ -19,8 +19,6 @@
 }
 
 .ricoh-hero {
-  padding: 0 6rem;
-
   .ricoh-logo {
     display: block;
     width: 10rem;
@@ -36,7 +34,6 @@
   font-family: "Source Sans Pro";
   z-index: 1;
   width: 50%;
-  padding: 0 6rem;
 
   h1 {
     color: $primary;
@@ -59,20 +56,24 @@
   text-align: center;
 }
 
+.home-entry-wrapper {
+  margin: 0 -6rem;
+}
+
 .home-entry {
   margin: 3rem 0;
   padding: 3rem 6rem;
 
   .entry-text {
-    padding: 2rem 5rem;
+    padding: 2rem 2rem 2rem 0;
   }
 
   .entry-img {
-    background-color: #fff;
     max-width: 100%;
-    box-shadow: 0 0 1rem black;
 
     .image-wrap {
+      background-color: #fff;
+      box-shadow: 0 0 1rem black;
       padding: 1rem;
       margin: auto;
 
@@ -98,7 +99,6 @@
   .home-intro {
     width: 100%;
     text-align: center;
-    padding: 0 1rem;
 
     h1 {
       font-size: 3rem;
@@ -115,9 +115,20 @@
     padding: 8rem 1rem;
   }
 
+  .home-entry-wrapper {
+    margin: 0 -1rem;
+  }
+
   .home-entry {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 3rem 1rem;
+
+    .row {
+      margin: 0;
+    }
+
+    .col-lg-6 {
+      padding: 0;
+    }
 
     .entry-text {
       padding-left: 0;
@@ -128,18 +139,11 @@
 
 // phone
 @media screen and (max-width: $phone-width) {
-  body {
-    background-color: $secondary;
-    color: #fff;
-  }
-
   .office-bg {
     display: none;
   }
 
   .lines-bg {
-    opacity: 0.1;
-
     .gatsby-image-wrapper {
       height: 100%;
       width: unset;
@@ -147,10 +151,7 @@
 
     img {
       height: 100%;
+      object-position: 0 center !important;
     }
-  }
-
-  .home-entry-wrapper {
-    background-color: #0000 !important;
   }
 }

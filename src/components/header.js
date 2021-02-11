@@ -54,6 +54,9 @@ const SiteNavbar = ({ pageInfo }) => {
         backgroundColor: expandedMenu
           ? "#434343"
           : `rgba(255,255,255,${alpha})`,
+        backgroundImage: expandedMenu
+          ? "unset"
+          : "linear-gradient(to bottom, #fff, #fff0)",
       }}
     >
       <Link to="/">
@@ -87,7 +90,7 @@ const SiteNavbar = ({ pageInfo }) => {
           </NavDropdown>
           <NavLink to="/chi-siamo">Chi Siamo</NavLink>
 
-          <Nav.Item className="nav-link">
+          <Nav.Item className="nav-link" style={{ paddingRight: 0 }}>
             <Link to="/contattaci" className="badge badge-primary">
               Contattaci
             </Link>
