@@ -1,25 +1,30 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Accordion from "../components/forms/accordion";
-import Form from "../components/forms/contattaci";
+import {
+  AssistenzaComputer,
+  RichiestaAssistenza,
+  RichiestaContatori,
+  RichiestaToner,
+} from "../components/forms/assistenza";
 import Layout from "../components/layout";
 
 export const forms = [
   {
     title: "Richiesta Assistenza",
-    form: <Form />,
+    form: <RichiestaAssistenza />,
   },
   {
     title: "Richiesta Toner",
-    form: <Form />,
+    form: <RichiestaToner />,
   },
   {
     title: "Richiesta Contatori",
-    form: <Form />,
+    form: <RichiestaContatori />,
   },
   {
     title: "Assistenza Computer",
-    form: <Form />,
+    form: <AssistenzaComputer />,
   },
 ];
 

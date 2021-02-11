@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import "../../styles/forms.scss";
 
 const AccordionItem = ({ activeForm, setActiveForm, title, children }) => {
+  const onItemClick = () => {
+    setActiveForm(activeForm === title ? null : title);
+  };
+
   return (
     <div className="accordion-item">
-      <div onClick={() => setActiveForm(title)} className="accordion-trigger">
+      <div onClick={onItemClick} className="accordion-trigger">
         <h4>{title}</h4>
         <div
           className={`accordion-icon ${
@@ -25,6 +29,7 @@ const AccordionItem = ({ activeForm, setActiveForm, title, children }) => {
 
 const Accordion = ({ forms, activeItem }) => {
   const [activeForm, setActiveForm] = useState(activeItem);
+
   const items = forms.map(item => (
     <AccordionItem
       activeForm={activeForm}

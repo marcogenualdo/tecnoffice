@@ -4,7 +4,7 @@ import { Button, Col, Form } from "react-bootstrap";
 const Contattaci = () => (
   <Form>
     <Form.Row>
-      <Form.Group as={Col} sm={6} controlId="formGridPassword">
+      <Form.Group as={Col} sm={6} controlId="formGridName">
         <Form.Label>Nome</Form.Label>
         <Form.Control type="text" placeholder="Nome" />
       </Form.Group>
@@ -16,11 +16,11 @@ const Contattaci = () => (
     </Form.Row>
 
     <Form.Row>
-      <Form.Group as={Col} sm={6} controlId="formGridState">
+      <Form.Group as={Col} sm={6} controlId="formGridTel">
         <Form.Label>Telefono</Form.Label>
         <Form.Control placeholder="Telefono" />
       </Form.Group>
-      <Form.Group as={Col} sm={6} controlId="formGridAddress1">
+      <Form.Group as={Col} sm={6} controlId="formGridRag">
         <Form.Label>Ragione Sociale</Form.Label>
         <Form.Control placeholder="Privato/Azienda" />
       </Form.Group>
