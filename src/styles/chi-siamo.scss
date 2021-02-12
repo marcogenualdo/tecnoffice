@@ -1,12 +1,18 @@
 @import "variables";
 
 .bg {
-  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
   z-index: 0;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  div {
+    height: 100%;
+  }
 }
 
 .floating-box {

@@ -90,7 +90,11 @@ const SiteNavbar = ({ pageInfo }) => {
           </NavDropdown>
           <NavLink to="/chi-siamo">Chi Siamo</NavLink>
 
-          <Nav.Item className="nav-link" style={{ paddingRight: 0 }}>
+          <Nav.Item
+            id="contattaci-button"
+            className="nav-link"
+            style={{ paddingRight: 0 }}
+          >
             <Link to="/contattaci" className="badge badge-primary">
               Contattaci
             </Link>

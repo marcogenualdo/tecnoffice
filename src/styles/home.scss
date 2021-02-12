@@ -18,17 +18,6 @@
   z-index: 0;
 }
 
-.ricoh-hero {
-  .ricoh-logo {
-    display: block;
-    width: 10rem;
-  }
-}
-
-.main-image-box {
-  height: calc(0.34 * 100vw);
-}
-
 .home-intro {
   position: relative;
   font-family: "Source Sans Pro";
@@ -45,6 +34,18 @@
     width: 70%;
     font-size: 1.4vw;
     font-weight: 600;
+  }
+}
+
+.main-image-box {
+  width: 100%;
+  height: calc(0.35 * 100vw);
+}
+
+.ricoh-hero {
+  .ricoh-logo {
+    display: block;
+    width: 10rem;
   }
 }
 
@@ -71,15 +72,14 @@
   .entry-img {
     max-width: 100%;
 
-    .image-wrap {
-      background-color: #fff;
-      box-shadow: 0 0 1rem black;
-      padding: 1rem;
-      margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 1rem black;
+    padding: 1rem;
+    margin: auto;
 
-      img {
-        max-width: 100%;
-      }
+    img {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }
@@ -112,28 +112,40 @@
   }
 
   .ricoh-hero {
-    padding: 8rem 1rem;
+    position: relative;
+    z-index: 1;
+    margin: 2rem -1rem;
+    padding: 1rem 2rem;
   }
 
   .home-entry-wrapper {
+    position: relative;
+    z-index: 1;
     margin: 0 -1rem;
   }
 
   .home-entry {
-    padding: 3rem 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
 
     .row {
       margin: 0;
-    }
-
-    .col-lg-6 {
-      padding: 0;
     }
 
     .entry-text {
       padding-left: 0;
       padding-right: 0;
     }
+  }
+}
+
+@media screen and (min-width: $phone-width) and (max-width: $tablet-width) {
+  .home-intro {
+    margin-top: calc(0.4 * 100vw);
+  }
+
+  .ricoh-hero {
+    background-color: #ddd9;
   }
 }
 
@@ -152,6 +164,17 @@
     img {
       height: 100%;
       object-position: 0 center !important;
+    }
+  }
+
+  .ricoh-hero {
+    margin: 0;
+    padding: 6rem 0;
+  }
+
+  .home-entry {
+    .col-lg-6 {
+      padding: 0;
     }
   }
 }

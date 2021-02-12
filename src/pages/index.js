@@ -15,9 +15,7 @@ const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
           <p>{content}</p>
         </Col>
         <Col lg={6} className="entry-img">
-          <div className="image-wrap">
-            <img src={imgSrc} />
-          </div>
+          <img src={imgSrc} />
         </Col>
       </Row>
     </Container>
@@ -41,6 +39,17 @@ const Services = ({ entries }) => (
 );
 
 const IndexPage = ({ data }) => {
+  const introOverlapWidth = 900;
+
+  const HomeIntro = () => (
+    <div
+      className="home-intro"
+      dangerouslySetInnerHTML={{
+        __html: data.intro.childMarkdownRemark.html,
+      }}
+    />
+  );
+
   return (
     <Layout pageInfo={{ pageName: "index" }}>
       <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
@@ -52,13 +61,10 @@ const IndexPage = ({ data }) => {
       </div>
 
       <div className="main-image-box">
-        <div
-          className="home-intro"
-          dangerouslySetInnerHTML={{
-            __html: data.intro.childMarkdownRemark.html,
-          }}
-        />
+        {window.screen.width > introOverlapWidth ? <HomeIntro /> : <></>}
       </div>
+      {window.screen.width <= introOverlapWidth ? <HomeIntro /> : <></>}
+
       <div className="ricoh-hero">
         <h2>Rivenditore autorizzato</h2>
         <span className="ricoh-logo">

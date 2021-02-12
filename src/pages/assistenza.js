@@ -34,7 +34,7 @@ const Assistenza = ({ location }) => {
 
   return (
     <Layout pageInfo={{ pageName: "contattaci" }}>
-      <Container className="px-lg-5 py-sm-5">
+      <Container id="formBox" className="px-lg-5 py-sm-5">
         <Accordion forms={forms} activeItem={location.state.activeForm} />
       </Container>
     </Layout>
