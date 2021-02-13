@@ -38,7 +38,7 @@ const Contattaci = () => {
     if (isCorrect) {
       console.log(fields);
 
-      fetch("/", {
+      fetch("/contattaci", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contattaci", ...fields }),
@@ -51,7 +51,13 @@ const Contattaci = () => {
   };
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form
+      noValidate
+      validated={validated}
+      onSubmit={handleSubmit}
+      name="contattaci"
+      data-netlify="true"
+    >
       <Form.Row>
         <Form.Group as={Col} sm={6} controlId="formGridName">
           <Form.Label>Nome</Form.Label>
