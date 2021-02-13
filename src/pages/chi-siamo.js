@@ -14,12 +14,7 @@ const ChiSiamo = ({ data }) => {
 
   return (
     <>
-      <div
-        className="bg"
-        style={{
-          height: window.screen.height,
-        }}
-      >
+      <div className="bg">
         <Img fluid={officeBg.childImageSharp.fluid} />
       </div>
       <Layout pageInfo={{ pageName: "contattaci" }}>
