@@ -38,10 +38,13 @@ const Contattaci = () => {
     if (isCorrect) {
       console.log(fields);
 
+      const subject = `${fields.name} di ${fields.entity} ha compilato il form.`;
+      const body = JSON.stringify(fields);
+
       fetch("/contattaci", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contattaci", ...fields }),
+        body: encode({ "form-name": "contattaci", subject, body }),
       })
         .then(() => alert("Email inviata con successo!"))
         .catch(error => alert(error));
