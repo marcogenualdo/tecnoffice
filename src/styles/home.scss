@@ -179,7 +179,11 @@
     .entry-text {
       font-size: 1rem;
       padding-left: 0;
-      padding-right: 0;
+      padding-right: 1rem;
+    }
+
+    .entry-img {
+      padding: 0.5rem;
     }
   }
 }
@@ -230,7 +234,7 @@
   }
 
   .home-entry {
-    .col-lg-6 {
+    .entry-img {
       padding: 0;
     }
   }

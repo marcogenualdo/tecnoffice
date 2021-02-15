@@ -23,7 +23,7 @@ const Footer = () => {
       }
       footerBg: file(relativePath: { eq: "footer-unique.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
+          fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }

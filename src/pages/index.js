@@ -10,7 +10,7 @@ const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
   <div className="home-entry-wrapper" style={{ backgroundColor: bgColor }}>
     <Container fluid className="home-entry">
       <Row>
-        <Col lg={6} className="entry-text">
+        <Col md={6} className="entry-text">
           <h1>{title}</h1>
           <div
             className="entry-body"
@@ -19,8 +19,8 @@ const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
             }}
           />
         </Col>
-        <Col lg={6} className="entry-img">
-          <img src={imgSrc} />
+        <Col md={6} className="entry-img">
+          <Img fluid={imgSrc} />
         </Col>
       </Row>
     </Container>
@@ -38,7 +38,7 @@ const Services = ({ entries }) => (
     {entries.map((entry, index) => (
       <HomeEntry
         title={entry.frontmatter.title}
-        imgSrc={entry.frontmatter.image}
+        imgSrc={entry.frontmatter.featuredImage.childImageSharp.fluid}
         content={entry.html}
         bgColor={serviceBackgroundColors[index % 3]}
       />
@@ -94,21 +94,21 @@ export const query = graphql`
   query {
     officeBg: file(relativePath: { eq: "home-bg-office.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     linesBg: file(relativePath: { eq: "home-bg-lines.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     logoRicoh: file(relativePath: { eq: "logo-ricoh.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -125,7 +125,13 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
-          image
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         html
       }
