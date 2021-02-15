@@ -15,7 +15,12 @@ const PromoEntry = ({ title, price, description, imgSrc, float, bgColor }) => (
             <span className="promo-title">{title}</span>
             <span className="promo-price">{price} €</span>
           </h1>
-          <p>{description}</p>
+          <div
+            className="entry-body"
+            dangerouslySetInnerHTML={{
+              __html: description,
+            }}
+          />
         </Col>
         <Col lg={6}>
           <div className="promo-entry-image">
@@ -49,7 +54,7 @@ const SecondPage = ({ data }) => (
         title={entry.childMarkdownRemark.frontmatter.title}
         price={entry.childMarkdownRemark.frontmatter.price}
         imgSrc={entry.childMarkdownRemark.frontmatter.image}
-        description={entry.childMarkdownRemark.excerpt}
+        description={entry.childMarkdownRemark.html}
         float={index % 2 ? "left" : "right"}
         bgColor={serviceBackgroundColors[index % 4]}
       />
@@ -68,12 +73,12 @@ export const query = graphql`
     ) {
       nodes {
         childMarkdownRemark {
-          excerpt(pruneLength: 10000)
           frontmatter {
             image
             title
             price
           }
+          html
         }
       }
     }

@@ -12,7 +12,12 @@ const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
       <Row>
         <Col lg={6} className="entry-text">
           <h1>{title}</h1>
-          <p>{content}</p>
+          <div
+            className="entry-body"
+            dangerouslySetInnerHTML={{
+              __html: content,
+            }}
+          />
         </Col>
         <Col lg={6} className="entry-img">
           <img src={imgSrc} />
@@ -23,8 +28,8 @@ const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
 );
 
 const serviceBackgroundColors = {
-  0: "rgba(255, 168, 168, 0.19)",
-  1: "rgba(255, 198, 88, 0.19)",
+  0: "rgba(255, 198, 88, 0.19)",
+  1: "rgba(255, 168, 168, 0.19)",
   2: "rgb(244, 244, 244)",
 };
 
@@ -34,7 +39,7 @@ const Services = ({ entries }) => (
       <HomeEntry
         title={entry.frontmatter.title}
         imgSrc={entry.frontmatter.image}
-        content={entry.excerpt}
+        content={entry.html}
         bgColor={serviceBackgroundColors[index % 3]}
       />
     ))}
@@ -114,6 +119,7 @@ export const query = graphql`
       }
     }
     services: allMarkdownRemark(
+      sort: { fields: frontmatter___title, order: ASC }
       filter: { fileAbsolutePath: { regex: "home/services/" } }
     ) {
       nodes {
@@ -121,7 +127,7 @@ export const query = graphql`
           title
           image
         }
-        excerpt(pruneLength: 10000)
+        html
       }
     }
   }

@@ -79,6 +79,26 @@
   .entry-text {
     padding: 2rem 6rem 2rem 0;
     font-size: 1.2rem;
+
+    h1 {
+      border-bottom: 2px solid $secondary;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        height: 50px;
+        background-image: url("../images/list-icon.png");
+        background-repeat: no-repeat;
+        background-size: 45px 45px;
+        background-position: top 5px left 5px;
+      }
+    }
   }
 
   .entry-img {
