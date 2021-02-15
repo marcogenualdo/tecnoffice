@@ -1,6 +1,6 @@
 ---
 title: Entry 1
-price: 2000
+price: "2000"
 featuredImage: ../uploads/home-entry-default.jpg
 ---
 
