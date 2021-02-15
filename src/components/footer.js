@@ -51,7 +51,11 @@ const Footer = () => {
               </span>
             </div>
           </Col>
-          <Col sm={6}></Col>
+          <Col sm={6} className="footer-attributions">
+            <a href="https://www.freepik.com/vectors/background">
+              Background vector created by rawpixel.com - www.freepik.com
+            </a>
+          </Col>
         </Row>
       </Container>
       <div className="footer-bg">

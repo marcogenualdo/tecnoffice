@@ -22,17 +22,20 @@ const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
   </div>
 );
 
+const serviceBackgroundColors = {
+  0: "rgba(255, 168, 168, 0.19)",
+  1: "rgba(255, 198, 88, 0.19)",
+  2: "rgb(244, 244, 244)",
+};
+
 const Services = ({ entries }) => (
   <div className="entries-wrapper">
-    <div className="entries-header">
-      <h1>I nostri servizi</h1>
-    </div>
     {entries.map((entry, index) => (
       <HomeEntry
         title={entry.frontmatter.title}
         imgSrc={entry.frontmatter.image}
         content={entry.excerpt}
-        bgColor={index % 2 ? "#f4f4f4" : "#fff0"}
+        bgColor={serviceBackgroundColors[index % 3]}
       />
     ))}
   </div>

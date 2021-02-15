@@ -54,7 +54,18 @@
 }
 
 .entries-header {
+  margin: 0 -6rem;
+  padding: 2rem;
+  background-image: linear-gradient(to bottom, #d4d4d4, #fff0);
+  border-top: 5px solid $primary;
   text-align: center;
+
+  h1 {
+    font-family: "Source Sans Pro";
+    color: $primary;
+    font-size: 4vw;
+    font-weight: 900;
+  }
 }
 
 .home-entry-wrapper {
@@ -66,7 +77,8 @@
   padding: 3rem 6rem;
 
   .entry-text {
-    padding: 2rem 2rem 2rem 0;
+    padding: 2rem 6rem 2rem 0;
+    font-size: 1.2rem;
   }
 
   .entry-img {
@@ -118,6 +130,18 @@
     padding: 1rem 2rem;
   }
 
+  .entries-header {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    background-image: linear-gradient(to top, #d4d4d4, #fff0);
+    border-bottom: 2px solid $primary;
+    border-top: 0px solid $primary;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
   .home-entry-wrapper {
     position: relative;
     z-index: 1;
@@ -133,6 +157,7 @@
     }
 
     .entry-text {
+      font-size: 1rem;
       padding-left: 0;
       padding-right: 0;
     }
@@ -170,6 +195,18 @@
   .ricoh-hero {
     margin: 0;
     padding: 6rem 0;
+  }
+
+  .entries-header {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    background-image: unset;
+    border-bottom: 5px solid $primary;
+    border-top: 0px solid white;
+
+    h1 {
+      color: #000;
+    }
   }
 
   .home-entry {
