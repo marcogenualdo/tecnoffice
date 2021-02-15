@@ -16,6 +16,7 @@ footer {
   font-weight: 800;
   color: #fff;
   text-shadow: 0 0 1px red;
+  height: 30vh;
 
   a {
     color: #fff;
@@ -46,16 +47,18 @@ footer {
     position: absolute;
     bottom: 0;
     z-index: 0;
-    height: 300px;
+    height: 35vh;
     width: 100%;
     overflow: hidden;
   }
 
   .footer-content {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     z-index: 1;
     background-color: #0000;
     padding: 0 15% 40px;
+    font-size: 0.9rem;
   }
 
   .footer-attributions {
@@ -96,7 +99,7 @@ footer {
     margin-top: 30%;
 
     .footer-content {
-      padding: 0 1rem 3rem;
+      padding: 0 1rem 1rem;
     }
 
     i {
