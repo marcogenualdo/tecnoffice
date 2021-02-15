@@ -21,13 +21,15 @@
   box-shadow: 0 0 2rem black;
   position: relative;
   z-index: 1;
-  padding: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .inner-box {
   padding: 1rem;
   background-color: #eee;
   color: $secondary;
+  border-radius: 6px;
 }
 
 ul.contatti {
@@ -58,7 +60,6 @@ ul.contatti {
 @media screen and (max-width: $tablet-width) {
   .floating-box {
     margin: 2rem 0;
-    padding: 0.5rem;
   }
 }
 

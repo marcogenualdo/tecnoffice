@@ -25,23 +25,30 @@
 .promo-entry {
   width: 90%;
   margin: 6rem 0;
+  padding: 0;
+
+  h1 {
+    position: relative;
+
+    .promo-price {
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .promo-entry-body {
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    margin: 0;
+    padding: 1rem 0;
+    min-height: 23rem;
+  }
 
   .promo-entry-text {
     font-size: 1.2rem;
     padding: 0rem 1rem 0.5rem 0;
-    border-bottom: 1px solid $primary;
-
-    h1 {
-      position: relative;
-      border-bottom: 1px solid $primary;
-
-      .promo-price {
-        font-size: 1.4rem;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-    }
 
     ul {
       list-style: none;

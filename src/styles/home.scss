@@ -74,15 +74,19 @@
 
 .home-entry {
   margin: 3rem 0;
-  padding: 3rem 6rem;
+  padding: 1rem 6rem;
+
+  .home-entry-body {
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    margin: 0;
+    padding: 1rem 0;
+    min-height: 23rem;
+  }
 
   .entry-text {
-    padding: 2rem 6rem 2rem 0;
+    padding: 0 6rem 0 0;
     font-size: 1.2rem;
-
-    h1 {
-      border-bottom: 2px solid $secondary;
-    }
 
     ul {
       list-style: none;
@@ -171,10 +175,6 @@
   .home-entry {
     padding: 1rem;
     margin: 1rem 0;
-
-    .row {
-      margin: 0;
-    }
 
     .entry-text {
       font-size: 1rem;

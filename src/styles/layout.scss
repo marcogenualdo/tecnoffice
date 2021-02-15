@@ -1,8 +1,8 @@
 @import "variables";
 
 main {
-  min-height: 100vh;
-  padding: 12rem 6rem;
+  min-height: 70vh;
+  padding: 12rem 6rem 0;
   z-index: 1;
 }
 
@@ -17,6 +17,7 @@ footer {
   color: #fff;
   text-shadow: 0 0 1px red;
   height: 30vh;
+  margin-top: 3rem;
 
   a {
     color: #fff;
@@ -74,7 +75,7 @@ footer {
 //tablet
 @media screen and (max-width: $tablet-width) {
   main {
-    padding: 6rem 1rem 12rem 1rem;
+    padding: 6rem 1rem 0;
   }
 
   footer {
@@ -95,6 +96,8 @@ footer {
   }
 
   footer {
+    margin-top: 10vh;
+
     .footer-bg {
       height: 40vh;
     }

@@ -9,9 +9,9 @@ import "../styles/home.scss";
 const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
   <div className="home-entry-wrapper" style={{ backgroundColor: bgColor }}>
     <Container fluid className="home-entry">
-      <Row>
+      <h1>{title}</h1>
+      <Row className="home-entry-body">
         <Col md={6} className="entry-text">
-          <h1>{title}</h1>
           <div
             className="entry-body"
             dangerouslySetInnerHTML={{

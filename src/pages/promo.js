@@ -15,12 +15,12 @@ const PromoEntry = ({ content, float, bgColor }) => {
   return (
     <div className="promo-entry-wrapper" style={{ backgroundColor: bgColor }}>
       <Container className="promo-entry" style={{ float }}>
-        <Row>
+        <h1>
+          <span className="promo-title">{title}</span>
+          <span className="promo-price">{price} €</span>
+        </h1>
+        <Row className="promo-entry-body">
           <Col md={6} className="promo-entry-text">
-            <h1>
-              <span className="promo-title">{title}</span>
-              <span className="promo-price">{price} €</span>
-            </h1>
             <div
               className="entry-body"
               dangerouslySetInnerHTML={{
