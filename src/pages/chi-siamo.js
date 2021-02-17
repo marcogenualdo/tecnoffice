@@ -41,7 +41,7 @@ const ChiSiamo = ({ data }) => {
             <h1>Chi Siamo</h1>
             <div
               dangerouslySetInnerHTML={{
-                __html: data.businessData.childMarkdownRemark.html,
+                __html: businessDescription,
               }}
             />
           </div>

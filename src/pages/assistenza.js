@@ -29,7 +29,7 @@ export const forms = [
 ];
 
 const Assistenza = ({ location }) => {
-  if (location?.state?.activeForm == undefined)
+  if (location?.state?.activeForm === undefined)
     location = { state: { activeForm: null } };
 
   return (

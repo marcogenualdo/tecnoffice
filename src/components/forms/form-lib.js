@@ -91,7 +91,7 @@ export const MailForm = ({ children }) => {
         body: encode({ "form-name": "contattaci", ...fields, subject, body }),
       })
         .then(resp => {
-          if (!resp.ok) throw `Returned status code ${resp.status}`;
+          if (!resp.ok) throw new Error(`Returned status code ${resp.status}`);
         })
         .then(() => alert("Email inviata con successo!"))
         .catch(error => {

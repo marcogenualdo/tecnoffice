@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
   const [introDoesFit, setIntroDoesFit] = useState(true);
   useEffect(() => {
     setIntroDoesFit(window.innerWidth > introOverlapWidth);
-  }, 1000);
+  }, []);
 
   return (
     <Layout pageInfo={{ pageName: "index" }}>
