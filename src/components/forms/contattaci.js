@@ -36,15 +36,13 @@ const Contattaci = () => {
 
     // sending
     if (isCorrect) {
-      console.log(fields);
-
-      const subject = `${fields.name} di ${fields.entity} ha compilato il form.`;
+      const subject = `${fields.name} di ${fields.entity} ha compilato il form contattaci.`;
       const body = JSON.stringify(fields);
 
       fetch("/contattaci", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contattaci", subject, body }),
+        body: encode({ "form-name": "contattaci", ...fields, subject, body }),
       })
         .then(() => alert("Email inviata con successo!"))
         .catch(error => alert(error));
@@ -68,6 +66,25 @@ const Contattaci = () => {
       name="contattaci"
       data-netlify="true"
     >
+      <Form.Row style={{ height: 0, opacity: 0 }}>
+        <Form.Group as={Col} sm={6} controlId="formGridSubject">
+          <Form.Control
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={fields.subject}
+          />
+        </Form.Group>
+        <Form.Group as={Col} sm={6} controlId="formGridBody">
+          <Form.Control
+            type="text"
+            name="body"
+            placeholder="Body"
+            value={fields.body}
+          />
+        </Form.Group>
+      </Form.Row>
+
       <Form.Row>
         <Form.Group as={Col} sm={6} controlId="formGridName">
           <Form.Label>Nome</Form.Label>
