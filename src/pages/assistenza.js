@@ -6,7 +6,7 @@ import {
   RichiestaAssistenza,
   RichiestaContatori,
   RichiestaToner,
-} from "../components/forms/assistenza";
+} from "../components/forms/forms";
 import Layout from "../components/layout";
 
 export const forms = [

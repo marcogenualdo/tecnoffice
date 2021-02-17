@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import Form from "../components/forms/contattaci";
+import { FormContattaci } from "../components/forms/forms";
 import Layout from "../components/layout";
 
 const Contattaci = () => (
@@ -16,7 +16,7 @@ const Contattaci = () => (
           </p>
         </Col>
         <Col lg={6}>
-          <Form />
+          <FormContattaci />
         </Col>
       </Row>
     </Container>
