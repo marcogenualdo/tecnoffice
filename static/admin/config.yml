@@ -43,3 +43,4 @@ collections:
           - { label: 'Telefono', name: 'phone', widget: 'string' }
           - { label: 'Indirizzo', name: 'address', widget: 'string' }
           - { label: 'Link a Indirizzo', name: 'addressLink', widget: 'string' }
+          - { label: 'Chi Siamo', name: 'body', widget: 'markdown' }

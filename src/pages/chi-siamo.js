@@ -7,7 +7,10 @@ import "../styles/chi-siamo.scss";
 const ChiSiamo = ({ data }) => {
   const {
     businessData: {
-      childMarkdownRemark: { frontmatter: businessData },
+      childMarkdownRemark: {
+        frontmatter: businessData,
+        html: businessDescription,
+      },
     },
     officeBg,
   } = data;
@@ -36,24 +39,11 @@ const ChiSiamo = ({ data }) => {
         <div className="floating-box main-text">
           <div className="inner-box">
             <h1>Chi Siamo</h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur? This starter also includes a navbar that
-              sticks to the top of the screen when the user scrolls past it, and
-              a footer that stays at the bottom of the screen.
-            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.businessData.childMarkdownRemark.html,
+              }}
+            />
           </div>
         </div>
         <div style={{ clear: "both" }} />
@@ -74,6 +64,7 @@ export const query = graphql`
           address
           addressLink
         }
+        html
       }
     }
     officeBg: file(relativePath: { eq: "chi-siamo-bg.jpg" }) {
