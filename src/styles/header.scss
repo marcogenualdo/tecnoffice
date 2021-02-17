@@ -1,7 +1,7 @@
 @import "variables";
 
 #site-navbar {
-  height: 9rem;
+  height: 8rem;
   z-index: 100;
   font-weight: 700;
   font-size: 1.5rem;
@@ -45,7 +45,7 @@
 @media screen and (max-width: $tablet-width) {
   #site-navbar {
     padding: 0;
-    height: 6rem;
+    height: 5rem;
   }
 
   .navbar-brand {
@@ -58,7 +58,7 @@
   }
 
   .nav-hamburger {
-    margin: 28px 2rem;
+    margin: 20px 2rem;
   }
 
   .navbar-light .navbar-nav .nav-link {

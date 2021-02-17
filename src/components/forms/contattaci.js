@@ -49,6 +49,13 @@ const Contattaci = () => {
         .then(() => alert("Email inviata con successo!"))
         .catch(error => alert(error));
 
+      let newFields = {};
+      for (let key in fields) {
+        newFields[key] = "";
+      }
+      setFields(newFields);
+      setValidated(false);
+
       event.preventDefault();
     }
   };
@@ -109,6 +116,7 @@ const Contattaci = () => {
             placeholder="Privato/Azienda"
             required
             onChange={handleChange}
+            value={fields.entity}
           />
           <MandatoryField />
         </Form.Group>
@@ -122,6 +130,7 @@ const Contattaci = () => {
           name="notes"
           placeholder="Note..."
           onChange={handleChange}
+          value={fields.notes}
         />
       </Form.Group>
 
