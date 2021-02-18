@@ -1,8 +1,8 @@
 ---
-email: tecnoffice.@gmail.it
-phone: 333 3333333
-address: Via Pio Paschini 45 00126 Roma RM
-addressLink: https://www.google.com/maps/search/tecnoffice/@41.775409512.345423614.5z?hl=en
+email: amministrazione@tecnofficesrl.biz
+phone: 06 52311778
+address: Viale Frà Andrea di Giovanni 150 Roma
+addressLink: https://www.google.it/maps/place/Viale+Fra'+Andrea+Di+Giovanni,+150,+00126+Roma+RM/@41.7838815,12.3417792,17.75z/data=!4m5!3m4!1s0x1325f16101faa461:0x75ee07619cde6!8m2!3d41.7837818!4d12.343312
 ---
 
 Stra
