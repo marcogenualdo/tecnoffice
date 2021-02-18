@@ -8,6 +8,16 @@ public_folder: src/content/uploads
 locale: it
 
 collections:
+  - name: 'home-intro'
+    label: 'Intro Home'
+    create: false
+    files:
+      - name: 'intro-text'
+        label: 'Testo Intro'
+        file: 'src/content/home/intro.md'
+        fields:
+          - { label: 'Testo', name: 'body', widget: 'markdown' }
+
   - name: 'home'
     label: 'Services'
     folder: 'src/content/home/services'

@@ -22,7 +22,7 @@ export const FormContattaci = () => {
   };
 
   return (
-    <MailForm>
+    <MailForm formTitle="Contattaci">
       <AdditionalFields />
     </MailForm>
   );
@@ -75,7 +75,7 @@ export const RichiestaAssistenza = () => {
   };
 
   return (
-    <MailForm>
+    <MailForm formTitle="Richiesta Assistenza">
       <AdditionalFields />
     </MailForm>
   );
@@ -145,7 +145,7 @@ export const RichiestaToner = () => {
   };
 
   return (
-    <MailForm>
+    <MailForm formTitle="Richiesta Toner">
       <AdditionalFields />
     </MailForm>
   );
@@ -210,10 +210,34 @@ export const RichiestaContatori = () => {
   };
 
   return (
-    <MailForm>
+    <MailForm formTitle="Richiesta Contatori">
       <AdditionalFields />
     </MailForm>
   );
 };
 
-export const AssistenzaComputer = FormContattaci;
+export const AssistenzaComputer = () => {
+  const AdditionalFields = () => {
+    const { fields, handleChange } = useContext(FormContext);
+
+    return (
+      <Form.Group controlId="note">
+        <Form.Label>Note</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={3}
+          name="notes"
+          placeholder="Note..."
+          onChange={handleChange}
+          value={fields.notes}
+        />
+      </Form.Group>
+    );
+  };
+
+  return (
+    <MailForm formTitle="Assistenza Computer">
+      <AdditionalFields />
+    </MailForm>
+  );
+};

@@ -28,8 +28,8 @@ const encode = data => {
     .join("&");
 };
 
-const makeMail = fields => {
-  const subject = `${fields.name} di ${fields.entity} ha compilato il form contattaci.`;
+const makeMail = (fields, formTitle) => {
+  const subject = `${fields.name} di ${fields.entity} ha compilato il form ${formTitle}.`;
 
   // excluding subject and body fields from email body entries
   const bodyFields = {};
@@ -47,7 +47,7 @@ const makeMail = fields => {
   return { subject, body };
 };
 
-export const MailForm = ({ children }) => {
+export const MailForm = ({ formTitle, children }) => {
   const [validated, setValidated] = useState(false);
   const [fields, setFields] = useState({});
 
@@ -81,7 +81,7 @@ export const MailForm = ({ children }) => {
 
     // sending
     if (isCorrect) {
-      const { subject, body } = makeMail(fields);
+      const { subject, body } = makeMail(fields, formTitle);
 
       console.log(`Sending mail\nSubject: ${subject}\nBody: ${body}`);
 
