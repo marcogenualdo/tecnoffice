@@ -7,6 +7,7 @@
   font-size: 1.5rem;
   align-items: center;
   padding: 0 6rem;
+  transition: background-color 0.5s;
 }
 
 .logo {
@@ -40,6 +41,20 @@
   text-align: center;
   font-size: 1.2rem;
   padding: 1rem;
+}
+
+.dropdown-menu {
+  display: block !important;
+  padding: 0;
+  border: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+
+.dropdown-menu.show {
+  max-height: 245px;
+  border: 1px solid $secondary;
 }
 
 @media screen and (max-width: $tablet-width) {

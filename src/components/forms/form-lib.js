@@ -115,7 +115,7 @@ export const MailForm = ({ children }) => {
       name="contattaci"
       data-netlify="true"
     >
-      <Form.Row style={{ height: 0, opacity: 0 }}>
+      <Form.Row style={{ display: "none" }}>
         <Form.Group as={Col} sm={6} controlId="formGridSubject">
           <Form.Control
             type="text"
