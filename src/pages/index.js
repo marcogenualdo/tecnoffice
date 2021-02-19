@@ -48,12 +48,14 @@ const Services = ({ entries }) => (
 
 const IndexPage = ({ data }) => {
   const HomeIntro = () => (
-    <div
-      className="home-intro"
-      dangerouslySetInnerHTML={{
-        __html: data.intro.childMarkdownRemark.html,
-      }}
-    />
+    <div className="home-intro">
+      <h1>{data.intro.childMarkdownRemark.frontmatter.title}</h1>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: data.intro.childMarkdownRemark.html,
+        }}
+      />
+    </div>
   );
 
   const introOverlapWidth = 700;
@@ -115,6 +117,9 @@ export const query = graphql`
     }
     intro: file(relativePath: { eq: "home/intro.md" }) {
       childMarkdownRemark {
+        frontmatter {
+          title
+        }
         html
       }
     }

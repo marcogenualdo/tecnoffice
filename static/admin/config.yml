@@ -16,10 +16,11 @@ collections:
         label: 'Testo Intro'
         file: 'src/content/home/intro.md'
         fields:
+          - { label: 'Titolo', name: 'title', widget: 'string' }
           - { label: 'Testo', name: 'body', widget: 'markdown' }
 
   - name: 'home'
-    label: 'Services'
+    label: 'Servizi'
     folder: 'src/content/home/services'
     create: true
     # slug: 'index'
