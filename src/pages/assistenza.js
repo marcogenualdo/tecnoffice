@@ -4,7 +4,7 @@ import Accordion from "../components/forms/accordion";
 import {
   AssistenzaComputer,
   RichiestaAssistenza,
-  RichiestaContatori,
+  InvioContatori,
   RichiestaToner,
 } from "../components/forms/forms";
 import Layout from "../components/layout";
@@ -19,8 +19,8 @@ export const forms = [
     form: <RichiestaToner />,
   },
   {
-    title: "Richiesta Contatori",
-    form: <RichiestaContatori />,
+    title: "Invio Contatori",
+    form: <InvioContatori />,
   },
   {
     title: "Assistenza Computer",

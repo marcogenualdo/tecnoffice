@@ -151,7 +151,7 @@ export const RichiestaToner = () => {
   );
 };
 
-export const RichiestaContatori = () => {
+export const InvioContatori = () => {
   const AdditionalFields = () => {
     const { fields, handleChange } = useContext(FormContext);
 
@@ -210,7 +210,7 @@ export const RichiestaContatori = () => {
   };
 
   return (
-    <MailForm formTitle="Richiesta Contatori">
+    <MailForm formTitle="Invio Contatori">
       <AdditionalFields />
     </MailForm>
   );

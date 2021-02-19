@@ -25,7 +25,7 @@ collections:
     # slug: 'index'
     fields:
       - { label: 'Titolo', name: 'title', widget: 'string' }
-      - { label: 'Immagine', name: 'image', widget: 'image', default: 'home-entry-default.jpg' }
+      - { label: 'Immagine', name: 'featuredImage', widget: 'image', default: 'home-entry-default.jpg' }
       - { label: 'Descrizione', name: 'body', widget: 'markdown' }
 
   - name: 'promo'
