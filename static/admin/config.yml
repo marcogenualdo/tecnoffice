@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: src/content/uploads
-public_folder: src/content/uploads
+media_folder: content/uploads
+public_folder: content/uploads
 
 locale: it
 
@@ -14,7 +14,7 @@ collections:
     files:
       - name: 'intro-text'
         label: 'Testo Intro'
-        file: 'src/content/home/intro.md'
+        file: 'content/home/intro.md'
         fields:
           - { label: 'Titolo', name: 'title', widget: 'string' }
           - { label: 'Testo', name: 'body', widget: 'markdown' }
@@ -22,7 +22,7 @@ collections:
 
   - name: 'home'
     label: 'Servizi'
-    folder: 'src/content/home/services'
+    folder: 'content/home/services'
     create: true
     # slug: 'index'
     fields:
@@ -32,7 +32,7 @@ collections:
 
   - name: 'promo'
     label: 'Promo'
-    folder: 'src/content/promo'
+    folder: 'content/promo'
     create: true
     # slug: 'index'
     fields:
@@ -49,7 +49,7 @@ collections:
     files:
       - label: 'Business Info'
         name: 'business-info'
-        file: 'src/content/business-info.md'
+        file: 'content/business-info.md'
         fields:
           - { label: 'e-mail', name: 'email', widget: 'string' }
           - { label: 'Telefono', name: 'phone', widget: 'string' }
