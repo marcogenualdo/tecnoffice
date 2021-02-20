@@ -18,6 +18,7 @@ collections:
         fields:
           - { label: 'Titolo', name: 'title', widget: 'string' }
           - { label: 'Testo', name: 'body', widget: 'markdown' }
+          - { label: 'Foto Copiatrice', name: 'featuredImage', widget: 'image', default: 'intro-printer.png' }
 
   - name: 'home'
     label: 'Servizi'

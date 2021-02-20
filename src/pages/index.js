@@ -67,14 +67,23 @@ const IndexPage = ({ data }) => {
   return (
     <Layout pageInfo={{ pageName: "index" }}>
       <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+
       <div className="office-bg">
         <Img fluid={data.officeBg.childImageSharp.fluid} />
+      </div>
+      <div className="copier-bg">
+        <Img
+          fluid={
+            data.intro.childMarkdownRemark.frontmatter.featuredImage
+              .childImageSharp.fluid
+          }
+        />
       </div>
       <div className="lines-bg">
         <Img fluid={data.linesBg.childImageSharp.fluid} />
       </div>
 
-      <div className="main-image-box">
+      <div className="home-intro-box">
         {introDoesFit ? <HomeIntro /> : <></>}
       </div>
       {!introDoesFit ? <HomeIntro /> : <></>}
@@ -94,7 +103,7 @@ export default IndexPage;
 
 export const query = graphql`
   query {
-    officeBg: file(relativePath: { eq: "home-bg-office.png" }) {
+    officeBg: file(relativePath: { eq: "home-bg-office-no-printer.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
@@ -119,6 +128,13 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           title
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         html
       }

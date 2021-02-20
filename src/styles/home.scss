@@ -18,6 +18,14 @@
   z-index: 0;
 }
 
+.copier-bg {
+  position: absolute;
+  top: 13vw;
+  left: 53vw;
+  width: 31vw;
+  z-index: 1;
+}
+
 .home-intro {
   position: relative;
   font-family: "Source Sans Pro";
@@ -37,7 +45,7 @@
   }
 }
 
-.main-image-box {
+.home-intro-box {
   width: 100%;
   height: calc(0.35 * 100vw);
 }
@@ -127,7 +135,7 @@
     overflow: hidden;
   }
 
-  .main-image-box {
+  .home-intro-box {
     height: 100%;
     width: 100%;
   }
@@ -212,6 +220,10 @@
 // phone
 @media screen and (max-width: $phone-width) {
   .office-bg {
+    display: none;
+  }
+
+  .copier-bg {
     display: none;
   }
 
