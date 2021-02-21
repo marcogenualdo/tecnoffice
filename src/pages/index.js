@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout pageInfo={{ pageName: "index" }}>
-      <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+      <SEO title="Home" />
 
       <div className="office-bg">
         <Img fluid={data.officeBg.childImageSharp.fluid} />

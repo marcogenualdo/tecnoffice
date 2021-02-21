@@ -48,7 +48,23 @@ const serviceBackgroundColors = {
 
 const SecondPage = ({ data }) => (
   <Layout pageInfo={{ pageName: "promo" }}>
-    <SEO title="Promo" />
+    <SEO
+      title="Promo"
+      keywords={[
+        `tecnoffice`,
+        `printing`,
+        `multifunzione`,
+        `stampante`,
+        `stampanti`,
+        `ufficio`,
+        `fotocopie`,
+        `fotocopiatrici`,
+        `roma`,
+        `offerte`,
+        `offerta`,
+        `promozione`,
+      ]}
+    />
 
     <div className="promo-lines-bg">
       <Img fluid={data.linesBg.childImageSharp.fluid} />

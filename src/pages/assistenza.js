@@ -8,6 +8,7 @@ import {
   RichiestaToner,
 } from "../components/forms/forms";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 export const forms = [
   {
@@ -34,6 +35,21 @@ const Assistenza = ({ location }) => {
 
   return (
     <Layout pageInfo={{ pageName: "contattaci" }}>
+      <SEO
+        title="Assistenza"
+        keywords={[
+          `assistenza`,
+          `guasto`,
+          `riparazione`,
+          `ricoh`,
+          `stampante`,
+          `fotocopiatrice`,
+          `toner`,
+          `contatori`,
+          `tecnoffice`,
+        ]}
+      />
+
       <Container id="formBox" className="px-lg-5 py-sm-5">
         <Accordion forms={forms} activeItem={location.state.activeForm} />
       </Container>

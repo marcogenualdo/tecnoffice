@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/gatsby-react-bootstrap-starter",
   siteMetadata: {
     title: `Tecnoffice`,
-    description: `Tecnoffice printing & lease.`,
+    description: `Tecnoffice printing & lease. Noleggio stampanti multifunzione Ricoh.`,
     author: `Marco Genualdo`,
   },
   plugins: [

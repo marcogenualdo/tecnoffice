@@ -2,9 +2,12 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { FormContattaci } from "../components/forms/forms";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Contattaci = () => (
   <Layout pageInfo={{ pageName: "contattaci" }}>
+    <SEO title="Contattaci" />
+
     <Container className="px-lg-5 contattaci-main">
       <Row>
         <Col lg={6} className="px-lg-3 py-3">

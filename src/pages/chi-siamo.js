@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 import "../styles/chi-siamo.scss";
 
 const ChiSiamo = ({ data }) => {
@@ -21,6 +22,8 @@ const ChiSiamo = ({ data }) => {
         <Img fluid={officeBg.childImageSharp.fluid} />
       </div>
       <Layout pageInfo={{ pageName: "contattaci" }}>
+        <SEO title="Chi Siamo" />
+
         <div className="floating-box contatti">
           <div className="inner-box">
             <h1>Contatti</h1>

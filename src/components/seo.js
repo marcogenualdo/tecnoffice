@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} | %s`}
       meta={[
         {
           name: `description`,
@@ -82,9 +82,20 @@ function SEO({ description, lang, meta, keywords, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `it`,
   meta: [],
-  keywords: [],
+  keywords: [
+    `tecnoffice`,
+    `printing`,
+    `multifunzione`,
+    `stampante`,
+    `stampanti`,
+    `ufficio`,
+    `fotocopie`,
+    `fotocopiatrici`,
+    `roma`,
+    `ricoh`,
+  ],
   description: ``,
 };
 
