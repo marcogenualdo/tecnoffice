@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link, navigate } from "gatsby";
+import { Link, navigate, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import PropTypes from "prop-types";
-import logo from "../images/logo.png";
 import { forms } from "../pages/assistenza";
 import "../styles/header.scss";
 
@@ -31,6 +31,18 @@ const SiteNavbar = ({ pageInfo }) => {
   const toggleBg = () => {
     setExpandedMenu(!expandedMenu);
   };
+
+  const { logo } = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
   // assistenza sub-menu
   const assistenzaItems = forms.map(({ title }) => (
@@ -61,7 +73,11 @@ const SiteNavbar = ({ pageInfo }) => {
     >
       <Link to="/">
         <Navbar.Brand as="span">
-          <img className="logo" src={logo} alt={pageInfo} />
+          <Img
+            className="logo"
+            fluid={logo.childImageSharp.fluid}
+            alt={pageInfo}
+          />
         </Navbar.Brand>
       </Link>
 

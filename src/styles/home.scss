@@ -143,18 +143,19 @@
 
   .home-intro {
     width: 100%;
-    text-align: center;
 
     h1 {
       font-size: 3rem;
       font-weight: 900;
+      text-align: center;
     }
 
     p,
     div {
       font-size: 1rem;
-      width: 90%;
+      width: 100%;
       margin: auto;
+      text-align: left;
     }
   }
 
@@ -237,6 +238,13 @@
     img {
       height: 100%;
       object-position: 0 center !important;
+    }
+  }
+
+  .home-intro {
+    div,
+    p {
+      text-align: center;
     }
   }
 
