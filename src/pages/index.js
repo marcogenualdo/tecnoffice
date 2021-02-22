@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -47,8 +47,8 @@ const Services = ({ entries }) => (
 );
 
 const IndexPage = ({ data }) => {
-  const HomeIntro = () => (
-    <div className="home-intro">
+  const HomeIntro = ({ className }) => (
+    <div className={`${className} home-intro`}>
       <h1>{data.intro.childMarkdownRemark.frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{
@@ -57,12 +57,6 @@ const IndexPage = ({ data }) => {
       />
     </div>
   );
-
-  const introOverlapWidth = 700;
-  const [introDoesFit, setIntroDoesFit] = useState(true);
-  useEffect(() => {
-    setIntroDoesFit(window.innerWidth > introOverlapWidth);
-  }, []);
 
   return (
     <Layout pageInfo={{ pageName: "index" }}>
@@ -83,10 +77,8 @@ const IndexPage = ({ data }) => {
         <Img fluid={data.linesBg.childImageSharp.fluid} />
       </div>
 
-      <div className="home-intro-box">
-        {introDoesFit ? <HomeIntro /> : <></>}
-      </div>
-      {!introDoesFit ? <HomeIntro /> : <></>}
+      <HomeIntro className="home-intro-box" />
+      <HomeIntro className="home-intro-out" />
 
       <div className="ricoh-hero">
         <h2>Rivenditore autorizzato</h2>

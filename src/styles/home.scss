@@ -46,7 +46,6 @@
 }
 
 .home-intro-box {
-  width: 100%;
   height: calc(0.35 * 100vw);
 }
 
@@ -269,5 +268,17 @@
     .entry-img {
       padding: 0;
     }
+  }
+}
+
+@media screen and (max-width: $intro-overlap-width) {
+  .home-intro-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $intro-overlap-width) {
+  .home-intro-out {
+    display: none;
   }
 }

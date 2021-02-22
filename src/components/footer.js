@@ -35,7 +35,7 @@ const Footer = () => {
     <footer>
       <Container fluid className="footer-content">
         <Row>
-          <Col lg={6} md={8}>
+          <Col lg={6} md={9}>
             <div className="footer-entry">
               <i>e-mail:</i> <span>{businessData.email}</span>
             </div>
@@ -51,7 +51,7 @@ const Footer = () => {
               </span>
             </div>
           </Col>
-          <Col sm={6} className="footer-attributions"></Col>
+          <Col sm={4} className="footer-attributions"></Col>
         </Row>
       </Container>
       <div className="footer-bg">

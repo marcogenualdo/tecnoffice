@@ -34,7 +34,7 @@ const SiteNavbar = ({ pageInfo }) => {
 
   const { logo } = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.png" }) {
+      logo: file(relativePath: { eq: "logo-big.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
