@@ -60,32 +60,12 @@ footer {
     background-color: #0000;
     padding: 0 15% 40px;
   }
-
-  .footer-attributions {
-    font-size: 0.7rem;
-
-    a {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
 }
 
 //tablet
 @media screen and (max-width: $tablet-width) {
   main {
     padding: 6rem 1rem 0;
-  }
-
-  footer {
-    .footer-attributions {
-      padding-top: 1rem;
-
-      a {
-        position: relative;
-      }
-    }
   }
 }
 
