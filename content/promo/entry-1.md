@@ -1,5 +1,5 @@
 ---
-title: RICOH IM C3000
+title: IM C3000
 price: canone mese
 featuredImage: content/uploads/imc-3000.png
 ---
