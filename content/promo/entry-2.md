@@ -1,7 +1,7 @@
 ---
-title: Entry 2
-price: "205"
-featuredImage: content/uploads/promo-entry-default.jpg
+title: IM C 300
+price: canone mese
+featuredImage: content/uploads/imc-300.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur **adipiscing** elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
