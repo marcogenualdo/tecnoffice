@@ -1,5 +1,5 @@
 ---
-title: L' offerta su misura per il tuo business
+title: Noleggio smart
 featuredImage: content/uploads/prova-3.png
 ---
 L' offerta su misura per il tuo business
