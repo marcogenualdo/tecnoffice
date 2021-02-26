@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum
+title: L'offerta su misura per il tuo business
 featuredImage: content/uploads/prova-3.png
 ---
 
