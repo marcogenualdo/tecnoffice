@@ -1,5 +1,5 @@
 ---
-title: Noleggio smart
+title: Ricoh Partner
 featuredImage: content/uploads/prova-3.png
 ---
 L' offerta su misura per il tuo business
