@@ -6,9 +6,9 @@ addressLink: https://www.google.it/maps/place/Viale+Fra'+Andrea+Di+Giovanni,+150
 ---
 **Non chiedetelo a noi**, preferiamo siano i nostri clienti, con i quali possiamo metterVi in contatto, a raccontare la loro esperienza.
 
-È dal 1991, anzi da molto prima, grazie alle esperienze lavorative dei soci fondatori direttamente nella casa costruttrice, che progettiamo soluzioni tecnico commerciali dalla parte dell'utente. La nostra squadra, costituita da figure professionali, propone da sempre soluzioni per l'ufficio cucite su misura, attente delle esigenze operative dell'utente.
+È dal 1991, anzi da molto prima, grazie alle esperienze lavorative dei soci fondatori direttamente nella casa costruttrice, che progettiamo soluzioni tecnico commerciali dalla parte dell'utente. La nostra squadra, costituita da figure professionali, propone da sempre soluzioni per l'ufficio cucite su misura, attente alle esigenze operative dell'utente.
 
-Lavoriamo per le aziende e nelle aziende. Garantiamo per loro la stampa, la digitalizzazione documentale, la connettività informatica, ed il controllo dei flussi di lavoro mirato ad una efficienza interna e al controllo dei costi.
+Lavoriamo per le aziende e nelle aziende. Garantiamo per loro la stampa, la digitalizzazione documentale, la connettività informatica, ed il controllo dei flussi di lavoro per l'efficienza interna e l'ottimizzazione dei costi.
 
 **Ma non vogliamo annoiarvi con parole, preferiamo incontrarvi**
 
