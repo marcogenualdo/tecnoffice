@@ -1,5 +1,5 @@
 ---
-title: IM C 300
+title: IM C300
 price: canone mese
 featuredImage: content/uploads/imc-300.png
 ---
