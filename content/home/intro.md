@@ -2,7 +2,7 @@
 title: Ricoh Partner
 featuredImage: content/uploads/prova-3.png
 ---
-L' offerta su misura per il tuo business
+**L' offerta su misura per il tuo business**
 
 Raccontaci la tua esigenza, progetteremo la soluzione
 
