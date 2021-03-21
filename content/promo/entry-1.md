@@ -9,4 +9,3 @@ Dispositivo intelligente **a colori A4 e A3**: il partner ideale per la tua atti
 * qualità di stampa e affidabilità 
 * scanner di rete facile e veloce (80 ipm)
 * cassetti da 550 fogli
-* minimo impatto ambientale ed energetico
