@@ -1,9 +1,9 @@
 ---
-title: Smart Operation Panel
+title: Dalla parte dell'utente
 featuredImage: content/uploads/detail_smart_operation_panel.jpg
 ---
+Dispositivi dotati di pannello touch-screen per una esperienza di utilizzo immediata. Tempistiche di lavoro ridotte al minimo grazie alla possibilità di creare scorciatoie per operazioni di routine.
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.orem ipsum dolor sit amet, consectetur adipiscing elit, **sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Inoltre tutti i pannelli possono essere implementati con applicazioni scaricate dall'Application site. 
 
-- primo elemento
-- secondo elemento
+Per l'utente diventa semplicissimo l'accesso ai propri documenti (in Cloud o locali) e interagire da dispostivi fissi, smartphone e tablet
