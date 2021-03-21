@@ -1,5 +1,5 @@
 ---
-title: "**Dalla parte dell'utente**"
+title: Dalla parte dell'utente
 featuredImage: content/uploads/detail_smart_operation_panel.jpg
 ---
 
