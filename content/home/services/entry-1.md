@@ -6,4 +6,4 @@ Dispositivi dotati di pannello **touch-screen** per una esperienza di utilizzo i
 
 Inoltre tutti i pannelli possono essere implementati con **applicazioni** scaricate dall'Application site. 
 
-Per l'utente diventa semplicissimo l'accesso ai propri **documenti** (in **Cloud** o locali) e interagire da dispostivi fissi, smartphone e tablet
+Per l'utente diventa semplicissimo l'accesso ai propri **documenti** (in **Cloud** o **locali**) e interagire da dispostivi fissi, smartphone e tablet
