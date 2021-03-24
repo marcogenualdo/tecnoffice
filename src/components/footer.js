@@ -1,14 +1,13 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
 import { Row, Col, Container } from "react-bootstrap";
+import footerBg from "../images/footer-bg.svg";
 
 const Footer = () => {
   const {
     businessData: {
       childMarkdownRemark: { frontmatter: businessData },
     },
-    footerBg,
   } = useStaticQuery(graphql`
     query {
       businessData: file(relativePath: { eq: "business-info.md" }) {
@@ -18,13 +17,6 @@ const Footer = () => {
             phone
             address
             addressLink
-          }
-        }
-      }
-      footerBg: file(relativePath: { eq: "footer-unique.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -55,7 +47,7 @@ const Footer = () => {
         </Row>
       </Container>
       <div className="footer-bg">
-        <Img fluid={footerBg.childImageSharp.fluid} />
+        <img width="100%" src={footerBg} />
       </div>
     </footer>
   );
