@@ -1,5 +1,5 @@
 ---
-title: MP C3004
+title: MP C3004 R
 price: canone mese
 featuredImage: content/uploads/imc-3000.png
 ---
