@@ -1,10 +1,11 @@
 ---
-title: IM C300
-price: canone mese
+title: MP C306 R
+price: Canone mensile 40
 featuredImage: content/uploads/imc-300.png
 ---
-Dispositivo **A4 a colori** dalle dimensioni contenute senza rinunciare alla qualità
+Dispositivo **A4 a colori** compatto senza rinunciare alla qualità
 
+* copie\stampe mensili incluse 1000 bn 250 colore
 * velocità 30 pagine al minuto
 * scanner di rete 
 * cassetto da 250 fogli
