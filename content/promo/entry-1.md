@@ -1,11 +1,11 @@
 ---
 title: MP C3004 R
-price: canone mese
+price: "Canone mensile 80 "
 featuredImage: content/uploads/imc-3000.png
 ---
-Dispositivo intelligente **a colori A4 e A3**: il partner ideale per la tua attività
+Dispositivo intelligente **a colori A4 e A3.** Il partner ideale per la tua attività
 
+* copie/stampe trimestre incluse 5000 bn 1000 colore
 * velocità 30 pagine al minuto
-* qualità di stampa e affidabilità 
 * scanner di rete facile e veloce (80 ipm)
-* cassetti da 550 fogli
+* 2 cassetti da 550 fogli
