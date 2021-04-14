@@ -6,6 +6,6 @@ featuredImage: content/uploads/ricoh-smart-integration-cloud.jpg
 
 * convertire i documenti cartacei in digitali editabili e archiviabili nel Cloud
 * ridurre i costi gestionali, di stampa e della carta
-* automatizzare i flussi di lavoro quotidiani dei documenti in modo veloce, intelligente ed economico
+* automatizzare i flussi di lavoro in modo intelligente ed economico
 
 https://www.youtube.com/watch?v=kjKGWqFfegA&t=18s&ab_channel=RICOHItalia
