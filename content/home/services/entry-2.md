@@ -2,6 +2,12 @@
 title: Ricoh "Smart Integration"
 featuredImage: content/uploads/ricoh-smart-integration.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+**Ricoh Smart Integration consente di :**
+
+* convertire i documenti cartacei in digitali editabili e archiviabili nel Cloud
+* ridurre i costi gestionali, di stampa e della carta
+* stampare i documenti dallo storage nel Cloud senza server IT
+* automatizzare i flussi di lavoro quotidiani dei documenti in modo veloce, intelligente ed economico
+* condividere contenuti attraverso il Cloud con qualsiasi dispositivo fisso o mobile
 
 https://www.youtube.com/watch?v=kjKGWqFfegA&t=18s&ab_channel=RICOHItalia
