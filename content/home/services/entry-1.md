@@ -9,3 +9,5 @@ Tutti i pannelli possono essere implementati con **applicazioni** scaricate dall
 Per l'utente diventa semplicissimo l'accesso ai propri **documenti** (in **Cloud** o **locali**) e interagire da dispostivi fissi, smartphone e tablet
 
 Inoltre tutti i dispositivi Ricoh sono pensati per ridurre al **minimo** **l'impatto** dal punto di vista energetico e ambientale, attraverso software che garantiscono un uso razionale delle risorse
+
+<https://www.youtube.com/watch?v=56Io4Z6zasE&t=57s&ab_channel=RICOHItalia>
