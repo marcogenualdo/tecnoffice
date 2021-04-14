@@ -14,3 +14,5 @@ Ricoh D5530 integra speaker potenti ed è predisposta a essere connessa con qual
 esterna o endpoint per videoconferenze.
 
 È inoltre possibile **navigare in Internet** direttamente dallo schermo.
+
+https://www.youtube.com/watch?v=Edt8LI6B_EA&t=2s&ab_channel=RICOHItalia
