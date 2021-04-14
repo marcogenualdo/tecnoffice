@@ -1,6 +1,6 @@
 ---
 title: MP C306 R
-price: Canone mensile 40
+price: Canone mese 40
 featuredImage: content/uploads/imc-300.png
 ---
 Dispositivo **A4 a colori** compatto senza rinunciare alla qualità
