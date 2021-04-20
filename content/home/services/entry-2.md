@@ -8,4 +8,4 @@ featuredImage: content/uploads/ricoh-smart-integration-cloud.jpg
 * ridurre i costi gestionali, di stampa e della carta
 * automatizzare i flussi di lavoro in modo intelligente ed economico
 
-https://www.youtube.com/watch?v=kjKGWqFfegA&t=18s&ab_channel=RICOHItalia
+[scopri di più](https://www.youtube.com/watch?v=kjKGWqFfegA&t=18s&ab_channel=RICOHItalia)
