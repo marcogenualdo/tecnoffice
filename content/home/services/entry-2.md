@@ -1,5 +1,5 @@
 ---
-title: 3. Ricoh "Smart Integration"
+title: Ricoh "Smart Integration"
 featuredImage: content/uploads/ricoh-smart-integration-cloud.jpg
 ---
 **Ricoh Smart Integration consente di :**
