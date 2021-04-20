@@ -1,6 +1,6 @@
 ---
 title: Dalla parte dell'utente e dell'ambiente
-featuredImage: content/uploads/sop21.jpg
+featuredImage: content/uploads/sop-3.png
 ---
 Dispositivi dotati di pannello **touch-screen** per una esperienza di utilizzo immediata. Tempistiche di lavoro ridotte al minimo grazie alla possibilità di creare scorciatoie per operazioni di routine.
 
