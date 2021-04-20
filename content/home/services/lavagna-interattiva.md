@@ -1,5 +1,5 @@
 ---
-title: "4. Lavagna Interattiva "
+title: "Lavagna Interattiva "
 featuredImage: content/uploads/jamboard.jpg
 ---
 Migliora la collaborazione, condividi idee ovunque e in qualsiasi momento.
