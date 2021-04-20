@@ -1,6 +1,6 @@
 ---
 title: MP C3004 R
-price: "Canone mensile 80 "
+price: "Canone mese 80 "
 featuredImage: content/uploads/imc-3000.png
 ---
 Dispositivo intelligente **a colori A4 e A3.** Il partner ideale per la tua attività
