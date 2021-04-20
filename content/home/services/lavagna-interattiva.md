@@ -13,4 +13,4 @@ Questa lavagna offre numerose opzioni di **connettività** per collegare un'ampi
 Ricoh D5530 integra speaker potenti ed è predisposta a essere connessa con qualsiasi tipo di videocamera
 esterna o endpoint per videoconferenze.
 
-[scopri di più](https://www.youtube.com/watch?v=Edt8LI6B_EA&t=2s&ab_channel=RICOHItalia)
+**[Scopri di più](https://www.youtube.com/watch?v=Edt8LI6B_EA&t=2s&ab_channel=RICOHItalia)**
