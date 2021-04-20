@@ -1,6 +1,6 @@
 ---
 title: Dalla parte dell'utente e dell'ambiente
-featuredImage: content/uploads/detail_smart_operation_panel.jpg
+featuredImage: content/uploads/sop.jpg
 ---
 Dispositivi dotati di pannello **touch-screen** per una esperienza di utilizzo immediata. Tempistiche di lavoro ridotte al minimo grazie alla possibilità di creare scorciatoie per operazioni di routine.
 
