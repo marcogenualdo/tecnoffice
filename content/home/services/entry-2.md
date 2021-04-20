@@ -4,7 +4,7 @@ featuredImage: content/uploads/smart-integration.png
 ---
 **Ricoh Smart Integration consente di:**
 
-collegare le multifunzione a **Cloud esterni** come **Google Drive** e **Office 365**
+collegare le multifunzione a **Cloud** come **Google Drive** e **Office 365**
 
 convertire i documenti cartacei in digitali **editabili** e **archiviabili**
 
