@@ -1,7 +1,7 @@
 ---
 title: MP C306 R
 price: Canone mese 40
-pdf: ../uploads/appunti-pandoc.pdf
+pdf: content/uploads/mpc_c306.pdf
 featuredImage: content/uploads/306-def.png
 ---
 
