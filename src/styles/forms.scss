@@ -1,10 +1,12 @@
+@import "./variables";
+
 // timing
 $base-duration: 250ms;
 
 // Colors
 $color1: rgba(40, 35, 38, 1);
 $color2: rgba(61, 90, 108, 1);
-$color3: #a00000;
+$color3: $primary;
 $color4: rgba(141, 233, 105, 1);
 $color5: rgba(203, 239, 67, 1);
 $color6: #ff6b6b;
