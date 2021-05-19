@@ -9,6 +9,7 @@ import "../styles/promo.scss";
 const PromoEntry = ({ content, float, bgColor }) => {
   const title = content.frontmatter.title;
   const price = content.frontmatter.price;
+  const pdf = content.frontmatter.pdf?.publicURL;
   const imgSrc = content.frontmatter.featuredImage.childImageSharp.fluid;
   const description = content.html;
 
@@ -27,6 +28,12 @@ const PromoEntry = ({ content, float, bgColor }) => {
                 __html: description,
               }}
             />
+
+            {pdf && (
+              <a className="promo-pdf" href={pdf} download>
+                Scarica Brochure
+              </a>
+            )}
           </Col>
           <Col md={6} className="promo-entry-image-wrapper">
             <div className="promo-entry-image">
@@ -46,7 +53,7 @@ const serviceBackgroundColors = {
   3: "rgb(244, 244, 244)",
 };
 
-const SecondPage = ({ data }) => (
+const PromoPage = ({ data }) => (
   <Layout pageInfo={{ pageName: "promo" }}>
     <SEO
       title="Promo"
@@ -83,7 +90,7 @@ const SecondPage = ({ data }) => (
   </Layout>
 );
 
-export default SecondPage;
+export default PromoPage;
 
 export const query = graphql`
   query {
@@ -103,6 +110,9 @@ export const query = graphql`
             }
             title
             price
+            pdf {
+              publicURL
+            }
           }
           html
         }

@@ -47,7 +47,7 @@ const Footer = () => {
         </Row>
       </Container>
       <div className="footer-bg">
-        <img width="100%" src={footerBg} />
+        <img width="100%" src={footerBg} alt="" />
       </div>
     </footer>
   );

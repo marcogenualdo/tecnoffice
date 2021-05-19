@@ -38,6 +38,7 @@ collections:
     fields:
       - { label: 'Titolo', name: 'title', widget: 'string' }
       - { label: 'Prezzo', name: 'price', widget: 'string' }
+      - { label: 'Pdf', name: 'pdf', widget: 'file', default: null }
       - { label: 'Immagine', name: 'featuredImage', widget: 'image', default: 'home-entry-default.jpg' }
       - { label: 'Descrizione', name: 'body', widget: 'markdown' }
 
