@@ -87,12 +87,14 @@
     margin: 0;
     padding: 1rem 0;
     min-height: 23rem;
+    justify-content: space-between;
   }
 
   .entry-text {
     font-size: 1.2rem;
     word-wrap: break-word;
     padding: 0;
+    flex: 0 0 48%;
 
     ul {
       list-style: none;
@@ -115,9 +117,10 @@
     max-width: 100%;
 
     background-color: #fff;
-    box-shadow: 0 0 1rem black;
+    box-shadow: 0 0 0.2rem gray;
     padding: 0.5rem;
-    margin: auto;
+    margin: auto 0;
+    flex: 0 0 48%;
 
     img {
       width: 100%;
@@ -263,6 +266,20 @@
 @media screen and (max-width: $intro-overlap-width) {
   .home-intro-box {
     display: none;
+  }
+
+  .ricoh-hero {
+    padding-bottom: 0;
+  }
+
+  .home-entry {
+    margin: 4rem -1rem !important;
+    padding: 2rem 1rem !important;
+    border-radius: 0 !important;
+
+    .home-entry-body {
+      display: block;
+    }
   }
 }
 
