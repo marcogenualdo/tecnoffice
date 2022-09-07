@@ -7,6 +7,10 @@ yarn-error.log*
 
 # direnv
 .envrc
+.direnv/
+
+# version managers
+.tool-versions
 
 # Runtime data
 pids

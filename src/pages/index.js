@@ -1,37 +1,10 @@
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
+import HomeEntry from "../components/home-entry";
 import SEO from "../components/seo";
 import "../styles/home.scss";
-
-const HomeEntry = ({ title, content, imgSrc, bgColor }) => (
-  <div className="home-entry-wrapper" style={{ backgroundColor: bgColor }}>
-    <Container fluid className="home-entry">
-      <h1>{title}</h1>
-      <Row className="home-entry-body">
-        <Col md={6} className="entry-text">
-          <div
-            className="entry-body"
-            dangerouslySetInnerHTML={{
-              __html: content,
-            }}
-          />
-        </Col>
-        <Col md={6} className="entry-img">
-          <Img fluid={imgSrc} />
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
-
-const serviceBackgroundColors = {
-  0: "rgba(255, 198, 88, 0.19)",
-  1: "rgba(255, 168, 168, 0.19)",
-  2: "rgb(244, 244, 244)",
-};
 
 const Services = ({ entries }) => (
   <div className="entries-wrapper">
@@ -40,7 +13,7 @@ const Services = ({ entries }) => (
         title={entry.frontmatter.title}
         imgSrc={entry.frontmatter.featuredImage.childImageSharp.fluid}
         content={entry.html}
-        bgColor={serviceBackgroundColors[index % 3]}
+        alignRight={!!(index % 2)}
       />
     ))}
   </div>

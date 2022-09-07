@@ -30,7 +30,7 @@
   position: relative;
   font-family: "Source Sans Pro";
   z-index: 1;
-  width: 50%;
+  width: 60%;
 
   h1 {
     color: $primary;
@@ -77,13 +77,9 @@
   }
 }
 
-.home-entry-wrapper {
-  margin: 0 -6rem;
-}
-
 .home-entry {
   margin: 3rem 0;
-  padding: 1rem 6rem;
+  padding: 2rem 3rem;
 
   .home-entry-body {
     border-top: 1px solid $primary;
@@ -94,9 +90,9 @@
   }
 
   .entry-text {
-    padding: 0 6rem 0 0;
     font-size: 1.2rem;
     word-wrap: break-word;
+    padding: 0;
 
     ul {
       list-style: none;
@@ -188,16 +184,7 @@
     }
   }
 
-  .home-entry-wrapper {
-    position: relative;
-    z-index: 1;
-    margin: 0 -1rem;
-  }
-
   .home-entry {
-    padding: 1rem;
-    margin: 1rem 0;
-
     .entry-text {
       font-size: 1rem;
       padding-left: 0;
